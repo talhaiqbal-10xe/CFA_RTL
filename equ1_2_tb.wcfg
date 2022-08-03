@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/convolution_2/equ1_2_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="equ1_2_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="37" />
+   <wvobject fp_name="/equ1_2_tb/e1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e1[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e2[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e3[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e4[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e5[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/grad_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_out[16:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_out[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/absolute_output" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">absolute_output[16:0]</obj_property>
+      <obj_property name="ObjectShortName">absolute_output[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e1t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e1t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e1t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e1t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e1t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e2t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e2t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e2t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e2t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e2t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e3t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e3t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e3t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e3t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e3t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e4t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e4t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e4t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e4t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e4t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e5t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e5t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e5t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e5t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/e5t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/absolute_output2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">absolute_output2[16:0]</obj_property>
+      <obj_property name="ObjectShortName">absolute_output2[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ1_2_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

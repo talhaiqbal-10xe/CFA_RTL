@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/convolution_2/gradients_2_tb_0718_1_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="gradients_2_tb_0718_1" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="49" />
+   <wvobject fp_name="/gradients_2_tb_0718_1/grad_hs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/grad_vs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/grad_hf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hf[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/grad_vf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vf[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/w_grad_hf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_hf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_hf[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/w_grad_vf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_vf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_vf[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m2_m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m2_m2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m2_m2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m2_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m2_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m2_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m2_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m2_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m2_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m2_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m2_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m2_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m2_p2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m2_p2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m2_p2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m1_m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m1_m2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m1_m2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m1_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m1_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m1_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m1_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m1_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m1_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m1_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m1_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m1_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_m1_p2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m1_p2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m1_p2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p0_m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_m2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_m2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p0_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p0_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p0_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p0_p2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p1_m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p1_m2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p1_m2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p1_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p1_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p1_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p1_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p1_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p1_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p1_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p1_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p1_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p1_p2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p1_p2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p1_p2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p2_m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p2_m2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p2_m2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p2_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p2_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p2_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p2_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p2_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p2_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p2_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p2_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p2_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/p_p2_p2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p2_p2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p2_p2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/grad_hs_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs_matlab[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/grad_vs_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vs_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vs_matlab[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/r1_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r1_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r1_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/r2_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r2_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r2_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/r3_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r3_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r3_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/r4_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r4_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r4_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/r5_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r5_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r5_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/c1_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c1_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c1_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/c2_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c2_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c2_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/c3_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c3_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c3_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/c4_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c4_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c4_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/c5_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c5_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">c5_mat[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/patch_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">patch_mat[15:0]</obj_property>
+      <obj_property name="ObjectShortName">patch_mat[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/uut/patch_mean" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">patch_mean[11:0]</obj_property>
+      <obj_property name="ObjectShortName">patch_mean[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0718_1/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+</wave_config>

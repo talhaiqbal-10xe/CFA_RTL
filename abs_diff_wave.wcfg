@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/convolution_2/abs_diff_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="abs_diff_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/abs_diff_tb/absolute_diff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">absolute_diff[14:0]</obj_property>
+      <obj_property name="ObjectShortName">absolute_diff[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/abs_diff_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mat[14:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/abs_diff_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/abs_diff_tb/green_h" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_h[14:0]</obj_property>
+      <obj_property name="ObjectShortName">green_h[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/abs_diff_tb/green_v" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_v[14:0]</obj_property>
+      <obj_property name="ObjectShortName">green_v[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/abs_diff_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

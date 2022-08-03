@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/convolution_2/gradients_2_tb_0720_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="gradients_2_tb_0720" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/gradients_2_tb_0720/grad_hs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/grad_vs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/hs_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hs_match</obj_property>
+      <obj_property name="ObjectShortName">hs_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/vs_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vs_match</obj_property>
+      <obj_property name="ObjectShortName">vs_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/grad_hs_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs_matlab[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/grad_vs_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vs_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vs_matlab[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/hf_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">hf_match</obj_property>
+      <obj_property name="ObjectShortName">hf_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/grad_hf_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hf_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hf_matlab[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/grad_hf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hf[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/vf_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">vf_match</obj_property>
+      <obj_property name="ObjectShortName">vf_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/grad_vf_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vf_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vf_matlab[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/grad_vf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vf[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/w_hf_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w_hf_match</obj_property>
+      <obj_property name="ObjectShortName">w_hf_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/w_grad_hf_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_hf_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_hf_matlab[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/w_grad_hf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_hf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_hf[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/w_vf_match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">w_vf_match</obj_property>
+      <obj_property name="ObjectShortName">w_vf_match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/w_grad_vf_matlab" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_vf_matlab[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_vf_matlab[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_2_tb_0720/w_grad_vf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_vf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_vf[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

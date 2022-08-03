@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/convolution_2/equ_15_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="equ_15_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/equ_15_tb/w_grad_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_f[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/test" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">test</obj_property>
+      <obj_property name="ObjectShortName">test</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/true_value" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">true_value[9:0]</obj_property>
+      <obj_property name="ObjectShortName">true_value[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/blend_th0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th0[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/blend_th1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/grad_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_f[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/uut/temp_dividend" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp_dividend[7:0]</obj_property>
+      <obj_property name="ObjectShortName">temp_dividend[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/uut/s2/inp1" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">inp1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inp1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">s2_inp1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/uut/s2/inp2" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">inp2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">inp2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">s2_inp2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/uut/s2/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/uut/dividend" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dividend[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dividend[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/uut/c/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">out[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_15_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

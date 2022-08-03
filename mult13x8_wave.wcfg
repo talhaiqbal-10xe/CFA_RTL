@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/convolution_2/multiplier13x8_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="multiplier13x8_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/multiplier13x8_tb/out1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out1[20:0]</obj_property>
+      <obj_property name="ObjectShortName">out1[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/out2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out2[20:0]</obj_property>
+      <obj_property name="ObjectShortName">out2[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/out_verilog" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_verilog[20:0]</obj_property>
+      <obj_property name="ObjectShortName">out_verilog[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/out_verilog" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_verilog[20:0]</obj_property>
+      <obj_property name="ObjectShortName">out_verilog[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[12:0]</obj_property>
+      <obj_property name="ObjectShortName">A[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[7:0]</obj_property>
+      <obj_property name="ObjectShortName">B[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mat[20:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[20:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/multiplier13x8_tb/i" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+</wave_config>
