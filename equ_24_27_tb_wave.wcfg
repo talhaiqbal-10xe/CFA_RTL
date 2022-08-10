@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/equ_24_27_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="equ_24_27_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/equ_24_27_tb/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">out[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">out_mat[14:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[14:0]</obj_property>
+      <obj_property name="label">out_mat[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/G_m1_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">G_m1_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">G_m1_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/G_m1_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">G_m1_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">G_m1_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/G_p1_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">G_p1_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">G_p1_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/G_p1_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">G_p1_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">G_p1_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/RB_m1_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_m1_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_m1_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/RB_m1_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_m1_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_m1_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/RB_p1_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_p1_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_p1_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/RB_p1_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_p1_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_p1_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/green_sum" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">green_sum[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/uut/adder_green/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">out[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/rb_sum" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rb_sum[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rb_sum[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/uut/adder_RB/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">out[13:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/green_minus_rb" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_minus_rb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">green_minus_rb[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/uut/G_minus_RB/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">out[14:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/g_minus_rb_by_4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g_minus_rb_by_4[31:0]</obj_property>
+      <obj_property name="ObjectShortName">g_minus_rb_by_4[31:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[14:0]</obj_property>
+      <obj_property name="ObjectShortName">out[14:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

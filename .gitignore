@@ -1,4 +1,7 @@
 *Outputs.txt
+output_image_matlab.txt
+interpolation_weights.txt
+*.asv
 *.exe
 *.sdb
 *.log

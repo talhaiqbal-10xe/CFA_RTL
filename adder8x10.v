@@ -24,7 +24,7 @@ input [9:0]A,B,C,D,E,F,G,H );
 
 
 wire [12:0] CV;
- assign CV=13'b0000000000100;
+ assign CV=13'b1100000000100;
 
 
 
@@ -529,13 +529,14 @@ assign F1i4L10_inp3 = sF1i3L10;
 wire sF1i4L10, cF1i4L10;
 FA F1i4L10( sF1i4L10,cF1i4L10,F1i4L10_inp1,F1i4L10_inp2,F1i4L10_inp3 );
 
-wire Hi4L11_inp1, Hi4L11_inp2;
-assign Hi4L11_inp1 = cHi2L10;
-assign Hi4L11_inp2 = cF1i3L10;
-wire sHi4L11, cHi4L11;
-HA Hi4L11 ( sHi4L11,cHi4L11,Hi4L11_inp1,Hi4L11_inp2 );
+wire F1i4L11_inp1, F1i4L11_inp2, F1i4L11_inp3;
+assign F1i4L11_inp1 = CV[11];
+assign F1i4L11_inp2 = cHi2L10;
+assign F1i4L11_inp3 = cF1i3L10;
+wire sF1i4L11, cF1i4L11;
+FA F1i4L11( sF1i4L11,cF1i4L11,F1i4L11_inp1,F1i4L11_inp2,F1i4L11_inp3 );
 
 
-assign out1 ={{cHi4L11},{cF1i4L10},{cF1i4L9},{cF1i4L8},{cF1i4L7},{cF1i4L6},{cF1i4L5},{cF1i4L4},{cF1i4L3},{cF1i4L2},{cF1i4L1},{cHi4L0},{sHi3L0}};
-assign out2 ={{1'b0},{sHi4L11},{sF1i4L10},{sF1i4L9},{sF1i4L8},{sF1i4L7},{sF1i4L6},{sF1i4L5},{sF1i4L4},{sF1i4L3},{sF1i4L2},{sF1i4L1},{sHi4L0}} ;
+assign out1 ={{CV[12]},{cF1i4L10},{cF1i4L9},{cF1i4L8},{cF1i4L7},{cF1i4L6},{cF1i4L5},{cF1i4L4},{cF1i4L3},{cF1i4L2},{cF1i4L1},{cHi4L0},{sHi3L0}};
+assign out2 ={{cF1i4L11},{sF1i4L11},{sF1i4L10},{sF1i4L9},{sF1i4L8},{sF1i4L7},{sF1i4L6},{sF1i4L5},{sF1i4L4},{sF1i4L3},{sF1i4L2},{sF1i4L1},{sHi4L0}} ;
 endmodule 

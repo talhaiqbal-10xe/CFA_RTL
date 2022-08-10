@@ -3,23 +3,21 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="C:/Users/user3/Downloads/Documents/convolution_2/pre_equ_24_27_tb_isim_beh.wdb" id="1" type="auto">
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/pre_equ_24_27_tb_isim_beh.wdb" id="1" type="auto">
          <top_modules>
             <top_module name="glbl" />
             <top_module name="pre_equ_24_27_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="30" />
    <wvobject fp_name="/pre_equ_24_27_tb/RB" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">RB[12:0]</obj_property>
       <obj_property name="ObjectShortName">RB[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/out_mat" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">out_mat[12:0]</obj_property>
       <obj_property name="ObjectShortName">out_mat[12:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/match" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">match</obj_property>
@@ -33,48 +31,106 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/G_m1_m1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">G_m1_m1[11:0]</obj_property>
       <obj_property name="ObjectShortName">G_m1_m1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/a1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">a1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/a" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">a[9:0]</obj_property>
+      <obj_property name="ObjectShortName">a[9:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/G_m1_p1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">G_m1_p1[11:0]</obj_property>
       <obj_property name="ObjectShortName">G_m1_p1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/b1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">b1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/b" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b[9:0]</obj_property>
+      <obj_property name="ObjectShortName">b[9:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/G_p1_m1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">G_p1_m1[11:0]</obj_property>
       <obj_property name="ObjectShortName">G_p1_m1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/c1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">c1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/c" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">c[9:0]</obj_property>
+      <obj_property name="ObjectShortName">c[9:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/G_p1_p1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">G_p1_p1[11:0]</obj_property>
       <obj_property name="ObjectShortName">G_p1_p1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/d1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">d1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">d[9:0]</obj_property>
+      <obj_property name="ObjectShortName">d[9:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/RB_m1_m1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">RB_m1_m1[11:0]</obj_property>
       <obj_property name="ObjectShortName">RB_m1_m1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/e1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1[11:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/e" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e[9:0]</obj_property>
+      <obj_property name="ObjectShortName">e[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/RB_m1_p1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">RB_m1_p1[11:0]</obj_property>
       <obj_property name="ObjectShortName">RB_m1_p1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/f1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">f1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">f1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">f[9:0]</obj_property>
+      <obj_property name="ObjectShortName">f[9:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/RB_p1_m1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">RB_p1_m1[11:0]</obj_property>
       <obj_property name="ObjectShortName">RB_p1_m1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/g1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">g1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/g" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">g[9:0]</obj_property>
+      <obj_property name="ObjectShortName">g[9:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/pre_equ_24_27_tb/RB_p1_p1" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">RB_p1_p1[11:0]</obj_property>
       <obj_property name="ObjectShortName">RB_p1_p1[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/pre_equ_24_27_tb/outfile0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
-      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/h1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">h1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pre_equ_24_27_tb/uut/h" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h[9:0]</obj_property>
+      <obj_property name="ObjectShortName">h[9:0]</obj_property>
    </wvobject>
 </wave_config>

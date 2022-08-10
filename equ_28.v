@@ -31,7 +31,7 @@ twosComplement (tc_g_m_rb,g_m_rb);
 
 wire [PixelBitWidth+1 -1:0] temp;
 adder #(PixelBitWidth+1) (temp,{1'b0,g},{3*{tc_g_m_rb[PixelBitWidth-2 -1]},tc_g_m_rb[PixelBitWidth-2 -1:0]});
-
+ 
 always @(*)
 begin
 RB = temp[PixelBitWidth+1 -1]==0? 0: temp>12'hfff ?12'hfff:temp; 
