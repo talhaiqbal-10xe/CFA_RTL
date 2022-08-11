@@ -38,7 +38,7 @@ module equ_36_tb;
 		.clk(clk), 
 		.rst(rst), 
 		.grad(grad), 
-		.G_m_RB(G_m_RB), 
+		.G_m_RB(G_m_RB),  
 		.RB_deriv(RB_deriv)
 	);
 

@@ -22,7 +22,7 @@ module equ_36
 #(parameter dataBitWidth = 14,parameter gradBitWidth=8)
 (
 input clk,rst,
-input [gradBitWidth -1:0] grad,
+input [gradBitWidth -1:0] grad, 
 input [dataBitWidth -1:0] G_m_RB, // green minus RB
 output reg [dataBitWidth+gradBitWidth -1:0] RB_deriv
     );

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/equ_38_41_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="equ_38_41_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/equ_38_41_tb/RB" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RB[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/RB_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_mat[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_mat[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[11:0]</obj_property>
+      <obj_property name="ObjectShortName">green[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/scaled_h" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_h[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_h[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/green_h" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_h[13:0]</obj_property>
+      <obj_property name="ObjectShortName">green_h[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/scaled_v" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_v[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_v[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/green_v" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_v[13:0]</obj_property>
+      <obj_property name="ObjectShortName">green_v[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/RB_dv" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_dv[21:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_dv[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/uut/vertical_module/RB_deriv" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_deriv[21:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_deriv[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/RB_dh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_dh[21:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_dh[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/uut/horizontal_module/RB_deriv" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RB_deriv[21:0]</obj_property>
+      <obj_property name="ObjectShortName">RB_deriv[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_38_41_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+</wave_config>

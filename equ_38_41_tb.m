@@ -10,11 +10,18 @@ for i=1:100
 a = -1*8191;
 b = 8191;
 row=1;
-column=2;
-g_hv = (a + (b-a).*rand(row,column));
+column=1;
+green_h= (a + (b-a).*rand(row,column));
+green_h= floor(green_h);
 
-g_hv(1)=floor(g_hv(1));
-g_hv(2)=floor(g_hv(2));
+a = -1*8191;
+b = 8191;
+row=1;
+column=1;
+green_v= (a + (b-a).*rand(row,column));
+green_v= floor(green_v);
+
+
 
 a = 0;
 b = 4095;
@@ -28,11 +35,12 @@ b = 255;
 row=1;
 column=1;
 grad_h = (a + (b-a).*rand(row,column));
+grad_h=floor(grad_h);
 
 grad_v = 255-floor(grad_h);
 
-r_dv=floor((grad_v/256)*(g_hv(1)));
-r_dh=floor((floor(grad_h)/256)*(g_hv(2)));
+r_dv=floor((grad_v/256)*(green_v));
+r_dh=floor((grad_h/256)*(green_h));
 
 R=green-(floor((r_dh+r_dv)/2));
 
@@ -45,6 +53,6 @@ else
 end
 
 
-fprintf(fileID,fmt,green,floor(grad_h),floor(grad_v),g_hv(1),g_hv(2),r_dh,r_dv,R);
+fprintf(fileID,fmt,green,grad_h,grad_v,green_h,green_v,r_dh,r_dv,R);
  end
 fclose(fileID);

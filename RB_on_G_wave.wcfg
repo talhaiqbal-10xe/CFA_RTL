@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/RB_on_G_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="RB_on_G_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="31" />
+   <wvobject fp_name="/RB_on_G_tb/red" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">red[11:0]</obj_property>
+      <obj_property name="ObjectShortName">red[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/R_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">R_mat[11:0]</obj_property>
+      <obj_property name="ObjectShortName">R_mat[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/blue" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blue[11:0]</obj_property>
+      <obj_property name="ObjectShortName">blue[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/B_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B_mat[11:0]</obj_property>
+      <obj_property name="ObjectShortName">B_mat[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[11:0]</obj_property>
+      <obj_property name="ObjectShortName">green[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gv_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gv_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">gv_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gh_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gh_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">gh_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gh_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gh_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">gh_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gv_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gv_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">gv_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/rv_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rv_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rv_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/rh_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rh_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rh_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/rh_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rh_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rh_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/rv_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rv_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">rv_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/bv_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bv_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">bv_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/bh_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bh_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">bh_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/bh_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bh_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">bh_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/bv_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bv_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">bv_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/scaled_hs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_hs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_hs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/scaled_vs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_vs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_vs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gr_h" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gr_h[13:0]</obj_property>
+      <obj_property name="ObjectShortName">gr_h[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gr_v" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gr_v[13:0]</obj_property>
+      <obj_property name="ObjectShortName">gr_v[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gb_h" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gb_h[13:0]</obj_property>
+      <obj_property name="ObjectShortName">gb_h[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/gb_v" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gb_v[13:0]</obj_property>
+      <obj_property name="ObjectShortName">gb_v[13:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/r_dv" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_dv[21:0]</obj_property>
+      <obj_property name="ObjectShortName">r_dv[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/r_dh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_dh[21:0]</obj_property>
+      <obj_property name="ObjectShortName">r_dh[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/b_dv" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b_dv[21:0]</obj_property>
+      <obj_property name="ObjectShortName">b_dv[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RB_on_G_tb/b_dh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">b_dh[21:0]</obj_property>
+      <obj_property name="ObjectShortName">b_dh[21:0]</obj_property>
+   </wvobject>
+</wave_config>
