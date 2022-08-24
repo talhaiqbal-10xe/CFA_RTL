@@ -37,7 +37,7 @@ module equ_24_27_tb;
 	reg [11:0] RB_p1_p1;
 
 	// Outputs
-	wire [11:0] out;
+	wire [14:0] out;
 
 	// Instantiate the Unit Under Test (UUT)
 	equ_24_27 uut (
@@ -56,7 +56,7 @@ module equ_24_27_tb;
 
 	reg [14:0] out_mat;
    wire match;
-   assign match= out==g_minus_rb_by_4;	
+   assign match= out==out_mat;	
    integer outfile0,green_sum,rb_sum,green_minus_rb,g_minus_rb_by_4;
 	
 	initial begin

@@ -35,7 +35,7 @@ genvar i,j,n;
 generate 
 for ( i=0; i<=BufferSize-1; i=i+1)
      begin 
-	  assign d_out[i*DataBitWidth+DataBitWidth-1:i*DataBitWidth]=inp_mem[i];
+	  assign d_out[(i+1)*DataBitWidth -1:i*DataBitWidth]=inp_mem[i];
 	  end
 endgenerate	
 

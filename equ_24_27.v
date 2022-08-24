@@ -24,7 +24,7 @@ module equ_24_27
 input clk,rst,
 input [DataBitWidth -1:0] G_m1_m1,G_m1_p1,G_p1_m1,G_p1_p1,
 input [DataBitWidth -1:0] RB_m1_m1,RB_m1_p1,RB_p1_m1,RB_p1_p1,
-output reg [DataBitWidth -1:0] out
+output reg [DataBitWidth+3 -1:0] out
     );
 
 
@@ -45,13 +45,14 @@ assign sub_out_div_by_4 = {{sub_out[DataBitWidth+3 -1],sub_out[DataBitWidth+3 -1
  
 always @(*)
 begin
-if (sub_out_div_by_4[DataBitWidth+3 -1])
-    out = 0;
-else
-    if(sub_out_div_by_4>15'h0fff)
-       out = 12'hfff;
-    else
-       out=sub_out_div_by_4;
+out=sub_out_div_by_4;
+//if (sub_out_div_by_4[DataBitWidth+3 -1])
+//    out = 0;
+//else
+//    if(sub_out_div_by_4>15'h0fff)
+//       out = 12'hfff;
+//    else
+//       out=sub_out_div_by_4;
 
 end
 

@@ -1,31 +1,9 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    14:03:11 07/27/2022 
-// Design Name: 
-// Module Name:    multiplier 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////module mult13x8(
-module mult13x8(
+module mult_unsigned_13x8(
 output [20:0] out1,out2,
 input [12:0] A,
 input [7:0] B );
 
 
-wire [20:0] CV;
- assign CV=21'b100000001000000000000;
 integer i;
  reg[12:0] PP[ 0:7];
 always@*
@@ -120,7 +98,7 @@ wire sF2i1L11, cF2i1L11;
 FA F2i1L11( sF2i1L11,cF2i1L11,F2i1L11_inp1,F2i1L11_inp2,F2i1L11_inp3 );
 
 wire F1i1L12_inp1, F1i1L12_inp2, F1i1L12_inp3;
-assign F1i1L12_inp1 = ~PP[0][12];
+assign F1i1L12_inp1 = PP[0][12];
 assign F1i1L12_inp2 = PP[1][11];
 assign F1i1L12_inp3 = PP[2][10];
 wire sF1i1L12, cF1i1L12;
@@ -133,28 +111,21 @@ assign F2i1L12_inp3 = PP[5][7];
 wire sF2i1L12, cF2i1L12;
 FA F2i1L12( sF2i1L12,cF2i1L12,F2i1L12_inp1,F2i1L12_inp2,F2i1L12_inp3 );
 
-wire Hi1L12_inp1, Hi1L12_inp2;
-assign Hi1L12_inp1 = PP[6][6];
-assign Hi1L12_inp2 = PP[7][5];
-wire sHi1L12, cHi1L12;
-HA Hi1L12 ( sHi1L12,cHi1L12,Hi1L12_inp1,Hi1L12_inp2 );
-
 wire F1i1L13_inp1, F1i1L13_inp2, F1i1L13_inp3;
-assign F1i1L13_inp1 = ~PP[1][12];
+assign F1i1L13_inp1 = PP[1][12];
 assign F1i1L13_inp2 = PP[2][11];
 assign F1i1L13_inp3 = PP[3][10];
 wire sF1i1L13, cF1i1L13;
 FA F1i1L13( sF1i1L13,cF1i1L13,F1i1L13_inp1,F1i1L13_inp2,F1i1L13_inp3 );
 
-wire F2i1L13_inp1, F2i1L13_inp2, F2i1L13_inp3;
-assign F2i1L13_inp1 = PP[4][9];
-assign F2i1L13_inp2 = PP[5][8];
-assign F2i1L13_inp3 = PP[6][7];
-wire sF2i1L13, cF2i1L13;
-FA F2i1L13( sF2i1L13,cF2i1L13,F2i1L13_inp1,F2i1L13_inp2,F2i1L13_inp3 );
+wire Hi1L13_inp1, Hi1L13_inp2;
+assign Hi1L13_inp1 = PP[4][9];
+assign Hi1L13_inp2 = PP[5][8];
+wire sHi1L13, cHi1L13;
+HA Hi1L13 ( sHi1L13,cHi1L13,Hi1L13_inp1,Hi1L13_inp2 );
 
 wire F1i1L14_inp1, F1i1L14_inp2, F1i1L14_inp3;
-assign F1i1L14_inp1 = ~PP[2][12];
+assign F1i1L14_inp1 = PP[2][12];
 assign F1i1L14_inp2 = PP[3][11];
 assign F1i1L14_inp3 = PP[4][10];
 wire sF1i1L14, cF1i1L14;
@@ -272,30 +243,30 @@ wire sF2i2L11, cF2i2L11;
 FA F2i2L11( sF2i2L11,cF2i2L11,F2i2L11_inp1,F2i2L11_inp2,F2i2L11_inp3 );
 
 wire F1i2L12_inp1, F1i2L12_inp2, F1i2L12_inp3;
-assign F1i2L12_inp1 = CV[12];
-assign F1i2L12_inp2 = cF1i1L11;
-assign F1i2L12_inp3 = cF2i1L11;
+assign F1i2L12_inp1 = PP[6][6];
+assign F1i2L12_inp2 = PP[7][5];
+assign F1i2L12_inp3 = cF1i1L11;
 wire sF1i2L12, cF1i2L12;
 FA F1i2L12( sF1i2L12,cF1i2L12,F1i2L12_inp1,F1i2L12_inp2,F1i2L12_inp3 );
 
 wire F2i2L12_inp1, F2i2L12_inp2, F2i2L12_inp3;
-assign F2i2L12_inp1 = sF1i1L12;
-assign F2i2L12_inp2 = sF2i1L12;
-assign F2i2L12_inp3 = sHi1L12;
+assign F2i2L12_inp1 = cF2i1L11;
+assign F2i2L12_inp2 = sF1i1L12;
+assign F2i2L12_inp3 = sF2i1L12;
 wire sF2i2L12, cF2i2L12;
 FA F2i2L12( sF2i2L12,cF2i2L12,F2i2L12_inp1,F2i2L12_inp2,F2i2L12_inp3 );
 
 wire F1i2L13_inp1, F1i2L13_inp2, F1i2L13_inp3;
-assign F1i2L13_inp1 = PP[7][6];
-assign F1i2L13_inp2 = cF1i1L12;
-assign F1i2L13_inp3 = cF2i1L12;
+assign F1i2L13_inp1 = PP[6][7];
+assign F1i2L13_inp2 = PP[7][6];
+assign F1i2L13_inp3 = cF1i1L12;
 wire sF1i2L13, cF1i2L13;
 FA F1i2L13( sF1i2L13,cF1i2L13,F1i2L13_inp1,F1i2L13_inp2,F1i2L13_inp3 );
 
 wire F2i2L13_inp1, F2i2L13_inp2, F2i2L13_inp3;
-assign F2i2L13_inp1 = cHi1L12;
+assign F2i2L13_inp1 = cF2i1L12;
 assign F2i2L13_inp2 = sF1i1L13;
-assign F2i2L13_inp3 = sF2i1L13;
+assign F2i2L13_inp3 = sHi1L13;
 wire sF2i2L13, cF2i2L13;
 FA F2i2L13( sF2i2L13,cF2i2L13,F2i2L13_inp1,F2i2L13_inp2,F2i2L13_inp3 );
 
@@ -308,13 +279,13 @@ FA F1i2L14( sF1i2L14,cF1i2L14,F1i2L14_inp1,F1i2L14_inp2,F1i2L14_inp3 );
 
 wire F2i2L14_inp1, F2i2L14_inp2, F2i2L14_inp3;
 assign F2i2L14_inp1 = cF1i1L13;
-assign F2i2L14_inp2 = cF2i1L13;
+assign F2i2L14_inp2 = cHi1L13;
 assign F2i2L14_inp3 = sF1i1L14;
 wire sF2i2L14, cF2i2L14;
 FA F2i2L14( sF2i2L14,cF2i2L14,F2i2L14_inp1,F2i2L14_inp2,F2i2L14_inp3 );
 
 wire F1i2L15_inp1, F1i2L15_inp2, F1i2L15_inp3;
-assign F1i2L15_inp1 = ~PP[3][12];
+assign F1i2L15_inp1 = PP[3][12];
 assign F1i2L15_inp2 = PP[4][11];
 assign F1i2L15_inp3 = PP[5][10];
 wire sF1i2L15, cF1i2L15;
@@ -328,7 +299,7 @@ wire sF2i2L15, cF2i2L15;
 FA F2i2L15( sF2i2L15,cF2i2L15,F2i2L15_inp1,F2i2L15_inp2,F2i2L15_inp3 );
 
 wire F1i2L16_inp1, F1i2L16_inp2, F1i2L16_inp3;
-assign F1i2L16_inp1 = ~PP[4][12];
+assign F1i2L16_inp1 = PP[4][12];
 assign F1i2L16_inp2 = PP[5][11];
 assign F1i2L16_inp3 = PP[6][10];
 wire sF1i2L16, cF1i2L16;
@@ -440,7 +411,7 @@ wire sF1i3L16, cF1i3L16;
 FA F1i3L16( sF1i3L16,cF1i3L16,F1i3L16_inp1,F1i3L16_inp2,F1i3L16_inp3 );
 
 wire F1i3L17_inp1, F1i3L17_inp2, F1i3L17_inp3;
-assign F1i3L17_inp1 = ~PP[5][12];
+assign F1i3L17_inp1 = PP[5][12];
 assign F1i3L17_inp2 = PP[6][11];
 assign F1i3L17_inp3 = PP[7][10];
 wire sF1i3L17, cF1i3L17;
@@ -566,13 +537,13 @@ wire sF1i4L17, cF1i4L17;
 FA F1i4L17( sF1i4L17,cF1i4L17,F1i4L17_inp1,F1i4L17_inp2,F1i4L17_inp3 );
 
 wire F1i4L18_inp1, F1i4L18_inp2, F1i4L18_inp3;
-assign F1i4L18_inp1 = ~PP[6][12];
+assign F1i4L18_inp1 = PP[6][12];
 assign F1i4L18_inp2 = PP[7][11];
 assign F1i4L18_inp3 = cF1i3L17;
 wire sF1i4L18, cF1i4L18;
 FA F1i4L18( sF1i4L18,cF1i4L18,F1i4L18_inp1,F1i4L18_inp2,F1i4L18_inp3 );
 
 
-assign out1 ={{CV[20]},{~PP[7][12]},{cF1i4L17},{cF1i4L16},{cF1i4L15},{cF1i4L14},{cF1i4L13},{cF1i4L12},{cF1i4L11},{cF1i4L10},{cF1i4L9},{cF1i4L8},{cF1i4L7},{cF1i4L6},{cF1i4L5},{cF1i4L4},{cF1i4L3},{cHi4L2},{PP[2][0]},{PP[0][1]},{PP[0][0]}};
+assign out1 ={{1'b0},{PP[7][12]},{cF1i4L17},{cF1i4L16},{cF1i4L15},{cF1i4L14},{cF1i4L13},{cF1i4L12},{cF1i4L11},{cF1i4L10},{cF1i4L9},{cF1i4L8},{cF1i4L7},{cF1i4L6},{cF1i4L5},{cF1i4L4},{cF1i4L3},{cHi4L2},{PP[2][0]},{PP[0][1]},{PP[0][0]}};
 assign out2 ={{1'b0},{cF1i4L18},{sF1i4L18},{sF1i4L17},{sF1i4L16},{sF1i4L15},{sF1i4L14},{sF1i4L13},{sF1i4L12},{sF1i4L11},{sF1i4L10},{sF1i4L9},{sF1i4L8},{sF1i4L7},{sF1i4L6},{sF1i4L5},{sF1i4L4},{sF1i4L3},{sHi4L2},{PP[1][0]},{1'b0}} ;
 endmodule

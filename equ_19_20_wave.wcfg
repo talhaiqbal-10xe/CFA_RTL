@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/equ_19_20_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="equ_19_20_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/equ_19_20_tb/diff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">diff[12:0]</obj_property>
+      <obj_property name="ObjectShortName">diff[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/w_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_s[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/w_s_mat" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">w_s_mat[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_s_mat[7:0]</obj_property>
+      <obj_property name="label">w_s_mat[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/w_f" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">w_f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_f[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="label">w_f[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/w_f_mat" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">w_f_mat[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_f_mat[7:0]</obj_property>
+      <obj_property name="label">w_f_mat[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/diff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">diff[12:0]</obj_property>
+      <obj_property name="ObjectShortName">diff[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/blend_th0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th0[8:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th0[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/blend_th1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th1[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/uut/diff_lt_th0" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">diff_lt_th0</obj_property>
+      <obj_property name="ObjectShortName">diff_lt_th0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/uut/diff_gt_th1" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">diff_gt_th1</obj_property>
+      <obj_property name="ObjectShortName">diff_gt_th1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/uut/temp1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">temp1[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/uut/dividend1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dividend1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">dividend1[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/uut/temp2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp2[16:0]</obj_property>
+      <obj_property name="ObjectShortName">temp2[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_19_20_tb/uut/dividend2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dividend2[16:0]</obj_property>
+      <obj_property name="ObjectShortName">dividend2[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

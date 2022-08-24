@@ -33,7 +33,7 @@ module multiplier13x8_tb;
 	wire [20:0] out2;
 
 	// Instantiate the Unit Under Test (UUT)
-	mult13x8 uut (
+	mult13x8 uut ( 
 		.out1(out1), 
 		.out2(out2), 
 		.A(A), 
@@ -41,7 +41,7 @@ module multiplier13x8_tb;
 	);
    wire [20:0] out_verilog;
 	assign out_verilog=out1+out2;
-	reg [20:0] out_mat;
+	reg [20:0] out_mat; 
 	wire match;
 	assign match= out_mat==out_verilog;
 	integer outfile0,i;  

@@ -49,6 +49,7 @@ wire [7:0] quotient1,quotient2;
 wire [thresholdBitWidth-1:0] remainder1,remainder2;
 assign temp1 = {diff_minus_th0[thresholdBitWidth-1:0],8'h00}; // multiply by 256
 assign temp2 = {th1_minus_diff[thresholdBitWidth-1:0],8'h00}; // multiply by 256
+assign divisor = subtractor_out;
 n_bitSubtractor #(thresholdBitWidth+8) subtract5_255(dividend1,temp1,{(thresholdBitWidth+8-1)*{1'b0},1'b1}); // multiply by 255
 n_bitSubtractor #(thresholdBitWidth+8) subtract6_255(dividend2,temp2,{(thresholdBitWidth+8-1)*{1'b0},1'b1}); // multiply by 255
 divider #(thresholdBitWidth+8,thresholdBitWidth) divider_w_s(quotient1,remainder1,dividend1,divisor);
@@ -57,7 +58,7 @@ divider #(thresholdBitWidth+8,thresholdBitWidth) divider_w_f(quotient2,remainder
 always @(*)
 case ({diff_gt_th1,diff_lt_th0})
 2'b00: begin w_s = quotient2;w_f=quotient1; end
-2'b01: begin w_s = 8'hff;w_s = 8'h00; end
+2'b01: begin w_s = 8'hff;w_f = 8'h00; end
 2'b10: begin w_s = 8'h00;w_f = 8'hff; end
 2'b11: begin w_s = 8'h00;w_f = 8'h00; end
 endcase 

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/equ_21_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="equ_21_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/equ_21_tb/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[11:0]</obj_property>
+      <obj_property name="ObjectShortName">green[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mat[11:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/h" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">h[7:0]</obj_property>
+      <obj_property name="ObjectShortName">h[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/v" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">v[7:0]</obj_property>
+      <obj_property name="ObjectShortName">v[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/threshold" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">threshold[7:0]</obj_property>
+      <obj_property name="ObjectShortName">threshold[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/Gh" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gh[12:0]</obj_property>
+      <obj_property name="ObjectShortName">Gh[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/Gv" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gv[12:0]</obj_property>
+      <obj_property name="ObjectShortName">Gv[12:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_21_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -19,12 +19,12 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module green_s_f
-#(parameter pixelBitWidth=12,parameter weightBitWidth=8,parameter divider=1)
+#(parameter pixelBitWidth=12,parameter weightBitWidth=8,parameter divider=0)
 (
 input clk,rst,
-input [weightBitWidth-1:0] h,v,threshold,
-input [pixelBitWidth+1-1:0] Gh,Gv,
-output reg [pixelBitWidth-1:0] green,
+input [weightBitWidth -1:0] h,v,threshold,
+input [pixelBitWidth+1 -1:0] Gh,Gv,
+output reg [pixelBitWidth+1 -1:0] green,
 output ready
     );
 
@@ -40,28 +40,28 @@ assign condition_h= th_x_h > {v,8'h00};
 assign condition_v= th_x_v > {h,8'h00};
 
 
-wire [weightBitWidth+pixelBitWidth+1-1:0] Gv_x_h,Gv_x_h_out1,Gv_x_h_out2;
-wire [weightBitWidth+pixelBitWidth+1-1:0] Gh_x_v,Gh_x_v_out1,Gh_x_v_out2;
+wire [weightBitWidth+pixelBitWidth+1 -1:0] Gv_x_h,Gv_x_h_out1,Gv_x_h_out2;
+wire [weightBitWidth+pixelBitWidth+1 -1:0] Gh_x_v,Gh_x_v_out1,Gh_x_v_out2;
 mult13x8 term1(Gv_x_h_out1,Gv_x_h_out2,Gv,h);
 mult13x8 term2(Gh_x_v_out1,Gh_x_v_out2,Gh,v);
 adder #(weightBitWidth+pixelBitWidth+1) add_term1(Gv_x_h,Gv_x_h_out1,Gv_x_h_out2);
 adder #(weightBitWidth+pixelBitWidth+1) add_term2(Gh_x_v,Gh_x_v_out1,Gh_x_v_out2);
 
 wire [weightBitWidth+pixelBitWidth+1+1 -1:0] numenator;
-adder #(weightBitWidth+pixelBitWidth+1+1) (numenator,Gv_x_h,Gh_x_v);
+adder #(weightBitWidth+pixelBitWidth+1+1) adder_term3(numenator,{Gv_x_h[weightBitWidth+pixelBitWidth+1 -1],Gv_x_h},{Gh_x_v[weightBitWidth+pixelBitWidth+1 -1],Gh_x_v});
 
-wire [pixelBitWidth+1-1:0]green_third;
+wire [pixelBitWidth+1 -1:0]green_third;
 
 generate 
 if (divider==1)
     begin
 	 // getting dividend ready
 	 wire [weightBitWidth+pixelBitWidth+1+1 -1:0] temp1,dividend;
-	 abs #(weightBitWidth+pixelBitWidth+1) abs_numenator(dividend,numenator);
+	 abs #(weightBitWidth+pixelBitWidth+1+1) abs_numenator(dividend,numenator);
 	 
 	 // getting the divider ready
-	 wire [thresholdBitWidth+1 -1:0] divisor;
-	 adder #(weightBitWidth+1) adder_divisor_gen(divisor,h,v);
+	 wire [weightBitWidth+1 -1:0] divisor;
+	 adder #(weightBitWidth+1) adder_divisor_gen(divisor,{1'b0,h},{1'b0,v});
 	 
 	 // divider 
 	 wire [pixelBitWidth+1 -1:0] quotient,quotient_complement;
@@ -70,7 +70,7 @@ if (divider==1)
 	 
 	 // complement to check if the number was originally negative
 	 twosComplement #(pixelBitWidth+1) t_c(quotient_complement,quotient);
-	 assign green_third = nummenator[weightBitWidth+pixelBitWidth+1+1-1] ? quotient_complement : quotient;
+	 assign green_third = numenator[weightBitWidth+pixelBitWidth+1+1-1] ? quotient_complement : quotient;
 	 
 	 
 	 end

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/equ_23_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="equ_23_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/equ_23_tb/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[11:0]</obj_property>
+      <obj_property name="ObjectShortName">green[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mat[11:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/w_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_s[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/green_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_s[12:0]</obj_property>
+      <obj_property name="ObjectShortName">green_s[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/Gs_x_ws" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gs_x_ws[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Gs_x_ws[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/w_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_f[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/green_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green_f[12:0]</obj_property>
+      <obj_property name="ObjectShortName">green_f[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/Gf_x_wf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gf_x_wf[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Gf_x_wf[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/Gs_x_ws" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gs_x_ws[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Gs_x_ws[20:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/final_add_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">final_add_temp[21:0]</obj_property>
+      <obj_property name="ObjectShortName">final_add_temp[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/final_add_temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">final_add_temp[21:0]</obj_property>
+      <obj_property name="ObjectShortName">final_add_temp[21:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/final_add" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">final_add[21:0]</obj_property>
+      <obj_property name="ObjectShortName">final_add[21:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/final_add" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">final_add[21:0]</obj_property>
+      <obj_property name="ObjectShortName">final_add[21:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/min_limit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">min_limit</obj_property>
+      <obj_property name="ObjectShortName">min_limit</obj_property>
+   </wvobject>
+   <wvobject fp_name="/equ_23_tb/uut/max_limit" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">max_limit</obj_property>
+      <obj_property name="ObjectShortName">max_limit</obj_property>
+   </wvobject>
+</wave_config>

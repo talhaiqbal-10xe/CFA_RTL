@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="21" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/equ_24_27_tb/out" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">out[14:0]</obj_property>
       <obj_property name="ObjectShortName">out[14:0]</obj_property>
@@ -67,44 +67,24 @@
       <obj_property name="ElementShortName">RB_p1_p1[11:0]</obj_property>
       <obj_property name="ObjectShortName">RB_p1_p1[11:0]</obj_property>
    </wvobject>
+   <wvobject fp_name="/equ_24_27_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="/equ_24_27_tb/green_sum" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">green_sum[31:0]</obj_property>
       <obj_property name="ObjectShortName">green_sum[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/equ_24_27_tb/uut/adder_green/out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">out[13:0]</obj_property>
-      <obj_property name="ObjectShortName">out[13:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/equ_24_27_tb/rb_sum" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">rb_sum[31:0]</obj_property>
       <obj_property name="ObjectShortName">rb_sum[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/equ_24_27_tb/uut/adder_RB/out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">out[13:0]</obj_property>
-      <obj_property name="ObjectShortName">out[13:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/equ_24_27_tb/green_minus_rb" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">green_minus_rb[31:0]</obj_property>
       <obj_property name="ObjectShortName">green_minus_rb[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/equ_24_27_tb/uut/G_minus_RB/out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">out[14:0]</obj_property>
-      <obj_property name="ObjectShortName">out[14:0]</obj_property>
-      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/equ_24_27_tb/g_minus_rb_by_4" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">g_minus_rb_by_4[31:0]</obj_property>
       <obj_property name="ObjectShortName">g_minus_rb_by_4[31:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/equ_24_27_tb/out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">out[14:0]</obj_property>
-      <obj_property name="ObjectShortName">out[14:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

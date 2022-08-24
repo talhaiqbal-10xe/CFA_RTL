@@ -34,20 +34,31 @@ mult13x8 Gf_x_wf_module(Gf_x_wf_out1,Gf_x_wf_out2,green_f,w_f);
 adder #(weightBitWidth+pixelBitWidth+1) add_Gs_x_ws(Gs_x_ws,Gs_x_ws_out1,Gs_x_ws_out2);
 adder #(weightBitWidth+pixelBitWidth+1) add_Gf_x_wf(Gf_x_wf,Gf_x_wf_out1,Gf_x_wf_out2);
 
-wire [weightBitWidth+pixelBitWidth+1+1 -1:0] final_add;
-adder #(weightBitWidth+pixelBitWidth+1+1) add_final(final_add,Gs_x_ws,Gf_x_wf);
+wire signed [weightBitWidth+pixelBitWidth+1+1 -1:0] final_add_temp,final_add;
+adder #(weightBitWidth+pixelBitWidth+1+1) add_final(final_add_temp,{Gs_x_ws[weightBitWidth+pixelBitWidth+1 -1],Gs_x_ws},{Gf_x_wf[weightBitWidth+pixelBitWidth+1 -1],Gf_x_wf});
+assign final_add = final_add_temp>>>8;
 
 wire min_limit,max_limit;
-assign min_limit = final_add [weightBitWidth+pixelBitWidth+1+1-1] == 1'b1;
+assign min_limit = final_add [weightBitWidth+pixelBitWidth+1+1 -1] == 1'b1;
 assign max_limit = final_add >`pBits'd2**pixelBitWidth-1;
 
 always @ (*)
-case({max_limit,min_limit})
-2'b00: begin green =  final_add; end
-2'b01: begin green = `pBits'd0; end
-2'b01: begin green = `pBits'd2**pixelBitWidth-1; end
-2'b11: begin green =  final_add; end
-endcase
+begin
+if (min_limit)
+    begin
+	 green = `pBits'd0;
+	 end
+else
+    if (max_limit)
+	     begin
+		  green = `pBits'hffff;
+		  end
+	 else
+	     begin
+		  green = final_add[pixelBitWidth -1:0];
+		  end
+end
+
 
 
 endmodule
