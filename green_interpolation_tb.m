@@ -47,8 +47,8 @@ else
         w_intrp_s = 0;
         w_intrp_f =255;
     else
-        w_intrp_s = floor(((blend_th2-r_inp)*255)/(blend_th2-blend_th1));
-        w_intrp_f = floor(((r_inp-blend_th1)*255)/(blend_th2-blend_th1));
+        w_intrp_s = floor( ((blend_th2-r_inp)*255)/(blend_th2-blend_th1) );
+        w_intrp_f = floor( ((r_inp-blend_th1)*255)/(blend_th2-blend_th1) );
         
     end
 end
@@ -90,7 +90,7 @@ else
     if ( f_th * w_grad_vf > w_grad_hf*256)
         gf=g_h;
     else
-        gf=(w_grad_hf*g_v + w_grad_vf*g_h)/(w_grad_hf+w_grad_vf);
+        gf=floor((w_grad_hf*g_v + w_grad_vf*g_h)/(w_grad_hf+w_grad_vf));
         if (gf <0)
             gf=ceil(gf);
         else

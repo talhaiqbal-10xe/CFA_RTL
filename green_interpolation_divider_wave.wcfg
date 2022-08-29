@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/green_interpolation_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="green_interpolation_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/diff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">diff[12:0]</obj_property>
+      <obj_property name="ObjectShortName">diff[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/blend_th0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th0[8:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th0[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/blend_th1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th1[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/diff_minus_th0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">diff_minus_th0[12:0]</obj_property>
+      <obj_property name="ObjectShortName">diff_minus_th0[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/th1_minus_diff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">th1_minus_diff[12:0]</obj_property>
+      <obj_property name="ObjectShortName">th1_minus_diff[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/temp1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">temp1[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/temp2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp2[16:0]</obj_property>
+      <obj_property name="ObjectShortName">temp2[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/dividend1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dividend1[16:0]</obj_property>
+      <obj_property name="ObjectShortName">dividend1[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/dividend2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dividend2[16:0]</obj_property>
+      <obj_property name="ObjectShortName">dividend2[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/divisor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">divisor[8:0]</obj_property>
+      <obj_property name="ObjectShortName">divisor[8:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/quotient1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">quotient1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">quotient1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/quotient2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">quotient2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">quotient2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/w_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_f[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/w_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_s[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

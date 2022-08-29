@@ -37,44 +37,44 @@
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/adder_inp_m2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">adder_inp_m2[11:0]</obj_property>
-      <obj_property name="ObjectShortName">adder_inp_m2[11:0]</obj_property>
+      <obj_property name="ElementShortName">adder_inp_m2[13:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_inp_m2[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/adder_inp_m1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">adder_inp_m1[11:0]</obj_property>
-      <obj_property name="ObjectShortName">adder_inp_m1[11:0]</obj_property>
+      <obj_property name="ElementShortName">adder_inp_m1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_inp_m1[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/adder_inp_c" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">adder_inp_c[11:0]</obj_property>
-      <obj_property name="ObjectShortName">adder_inp_c[11:0]</obj_property>
+      <obj_property name="ElementShortName">adder_inp_c[13:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_inp_c[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/adder_inp_p1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">adder_inp_p1[11:0]</obj_property>
-      <obj_property name="ObjectShortName">adder_inp_p1[11:0]</obj_property>
+      <obj_property name="ElementShortName">adder_inp_p1[13:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_inp_p1[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/adder_inp_p2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">adder_inp_p2[11:0]</obj_property>
-      <obj_property name="ObjectShortName">adder_inp_p2[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="ElementShortName">adder_inp_p2[13:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_inp_p2[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#ff00ff</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/out" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">out[13:0]</obj_property>
       <obj_property name="ObjectShortName">out[13:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="CustomSignalColor">#00ffff</obj_property>
    </wvobject>

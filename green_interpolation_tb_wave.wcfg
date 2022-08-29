@@ -33,42 +33,6 @@
       <obj_property name="ElementShortName">rst</obj_property>
       <obj_property name="ObjectShortName">rst</obj_property>
    </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_m2_p0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_m2_p0[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_m2_p0[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_m1_p0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_m1_p0[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_m1_p0[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_p0_m2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_p0_m2[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_p0_m2[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_p0_m1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_p0_m1[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_p0_m1[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_p0_p0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_p0_p0[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_p0_p0[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_p0_p1" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_p0_p1[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_p0_p1[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_p0_p2" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_p0_p2[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_p0_p2[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_p1_p0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_p1_p0[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_p1_p0[11:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/green_interpolation_tb/p_p2_p0" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">p_p2_p0[11:0]</obj_property>
-      <obj_property name="ObjectShortName">p_p2_p0[11:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/green_interpolation_tb/scaled_hs" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">scaled_hs[7:0]</obj_property>
       <obj_property name="ObjectShortName">scaled_hs[7:0]</obj_property>
@@ -180,6 +144,42 @@
       <obj_property name="ElementShortName">green[11:0]</obj_property>
       <obj_property name="ObjectShortName">green[11:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_m2_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m2_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m2_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_m1_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m1_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m1_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_m2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_m2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_p2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p1_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p1_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p1_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p2_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p2_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p2_p0[11:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/outfile0" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
