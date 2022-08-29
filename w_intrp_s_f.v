@@ -22,7 +22,7 @@ module w_intrp_s_f
 #(parameter pixelBitWidth=12,thresholdBitWidth=9)
 (
 input clk,rst,
-input [pixelBitWidth-1+1:0] diff,
+input [pixelBitWidth+1 -1:0] diff,
 input [thresholdBitWidth-1:0] blend_th0,blend_th1,
 output reg [7:0] w_s,w_f
     );
@@ -30,7 +30,7 @@ output reg [7:0] w_s,w_f
 //comparator
 wire diff_lt_th0,diff_gt_th1; //diff_greater_lesser_than_threshold_0_1
 assign diff_lt_th0=diff<blend_th0;
-assign diff_gt_th1=diff>blend_th1;
+assign diff_gt_th1=diff>=blend_th1;
 
 // subtacting thresholds
 wire [thresholdBitWidth-1:0] subtractor_out;

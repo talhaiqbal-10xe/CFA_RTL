@@ -21,11 +21,11 @@
 module abs_diff
 #(parameter pixelBitWidth=14) // absoluteBitWidth = bit width of the absolute module. 
 (
-output reg [pixelBitWidth-2:0] absolute_diff,
+output reg [pixelBitWidth-2:0] absolute_diff, // 13 bits
 input  [pixelBitWidth-1:0] green_h,green_v
 
     );
-wire [pixelBitWidth+1-1:0] diff;
+wire [pixelBitWidth -1:0] diff;
 n_bitSubtractor #(pixelBitWidth) sub1(diff,green_h,green_v);
 
 wire [pixelBitWidth-1:0] abs_out;

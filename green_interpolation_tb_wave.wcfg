@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/green_interpolation_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="green_interpolation_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="39" />
+   <wvobject fp_name="/green_interpolation_tb/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[11:0]</obj_property>
+      <obj_property name="ObjectShortName">green[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mat[12:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/match" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">match</obj_property>
+      <obj_property name="ObjectShortName">match</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_m2_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m2_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m2_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_m1_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_m1_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_m1_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_m2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_m2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_m2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_m1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_m1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_m1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_p1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p1[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p0_p2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p0_p2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p0_p2[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p1_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p1_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p1_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/p_p2_p0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">p_p2_p0[11:0]</obj_property>
+      <obj_property name="ObjectShortName">p_p2_p0[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/scaled_hs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_hs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_hs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/scaled_vs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_vs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_vs[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/w_grad_hf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_hf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_hf[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/w_grad_vf" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_grad_vf[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_grad_vf[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/spatial_th" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">spatial_th[7:0]</obj_property>
+      <obj_property name="ObjectShortName">spatial_th[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/freq_th" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">freq_th[7:0]</obj_property>
+      <obj_property name="ObjectShortName">freq_th[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/blend_th0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th0[8:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th0[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/blend_th1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blend_th1[8:0]</obj_property>
+      <obj_property name="ObjectShortName">blend_th1[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/Gh_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gh_mat[13:0]</obj_property>
+      <obj_property name="ObjectShortName">Gh_mat[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">out[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/Gv_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gv_mat[13:0]</obj_property>
+      <obj_property name="ObjectShortName">Gv_mat[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/green_v_module/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">out[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/diff_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">diff_mat[12:0]</obj_property>
+      <obj_property name="ObjectShortName">diff_mat[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/abs_diff_module/absolute_diff" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">absolute_diff[12:0]</obj_property>
+      <obj_property name="ObjectShortName">absolute_diff[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/w_intp_s_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_intp_s_mat[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_intp_s_mat[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/w_s" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_s[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/w_intp_f_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_intp_f_mat[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_intp_f_mat[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/W_s_f_module/w_f" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">w_f[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_f[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/gs_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gs_mat[12:0]</obj_property>
+      <obj_property name="ObjectShortName">gs_mat[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/green_s_module/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[12:0]</obj_property>
+      <obj_property name="ObjectShortName">green[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/gf_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">gf_mat[12:0]</obj_property>
+      <obj_property name="ObjectShortName">gf_mat[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/green_f_module/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[12:0]</obj_property>
+      <obj_property name="ObjectShortName">green[12:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mat[12:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/green" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">green[11:0]</obj_property>
+      <obj_property name="ObjectShortName">green[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+</wave_config>

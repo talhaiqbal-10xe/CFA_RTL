@@ -24,23 +24,23 @@ r= (a + (b-a).*rand(row,column));
 g_h= floor(r(1));
 g_v= floor(r(2));
 
-s_th = 179;
+f_th = 179;
 
-if ( s_th * scaled_h > scaled_v*256)
-    gs=g_v;
+if ( f_th * scaled_h > scaled_v*256)
+    gf=g_v;
 else
-    if ( s_th * scaled_v > scaled_h*256)
-        gs=g_h;
+    if ( f_th * scaled_v > scaled_h*256)
+        gf=g_h;
     else
-        gs=(scaled_h*g_v + scaled_v*g_h)/(scaled_h+scaled_v);
-        if (gs <0)
-            gs=ceil(gs);
+        gf=(scaled_h*g_v + scaled_v*g_h)/(scaled_h+scaled_v);
+        if (gf <0)
+            gf=ceil(gf);
         else
-            gs=floor(gs);
+            gf=floor(gf);
         end
         
     end
 end
-fprintf(fileID,fmt,scaled_h,scaled_v,g_h,g_v,s_th,gs);
+fprintf(fileID,fmt,scaled_h,scaled_v,g_h,g_v,f_th,gf);
  end
 fclose(fileID);

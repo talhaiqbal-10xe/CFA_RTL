@@ -23,7 +23,7 @@ module green_h_v
 (
 input clk,rst,
 input  [pixelBitWidth-1:0] m2,m1,c,p1,p2, // -2,-1,center,+1,+2
-output reg [pixelBitWidth-1+2:0] out
+output reg [pixelBitWidth+2 -1:0] out
     );
 wire [pixelBitWidth-1:0] adder_inp_m2,adder_inp_m1,adder_inp_c,adder_inp_p1,adder_inp_p2;
 wire [pixelBitWidth-1:0] shifted_m2,shifted_m1,shifted_c,shifted_p1,shifted_p2;
