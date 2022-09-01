@@ -51,7 +51,7 @@ adder #(pixelBitWidth+2+3) adder_comp(adder_complete,adder_out1,adder_out2);
 
 always @(*)
 begin
-out = adder_complete[pixelBitWidth+1 -1:0];
+out = adder_complete[pixelBitWidth+2 -1:0];
 end
 
 

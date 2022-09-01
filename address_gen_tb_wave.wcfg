@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/address_gen_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="address_gen_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="7" />
+   <wvobject fp_name="/address_gen_tb/address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address[21:0]</obj_property>
+      <obj_property name="ObjectShortName">address[21:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/address_gen_tb/out_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out_mat[21:0]</obj_property>
+      <obj_property name="ObjectShortName">out_mat[21:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/address_gen_tb/col_max" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col_max[10:0]</obj_property>
+      <obj_property name="ObjectShortName">col_max[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/address_gen_tb/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[10:0]</obj_property>
+      <obj_property name="ObjectShortName">row[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/address_gen_tb/col" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col[10:0]</obj_property>
+      <obj_property name="ObjectShortName">col[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/address_gen_tb/outfile0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">outfile0[31:0]</obj_property>
+      <obj_property name="ObjectShortName">outfile0[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/address_gen_tb/LHS" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">LHS[31:0]</obj_property>
+      <obj_property name="ObjectShortName">LHS[31:0]</obj_property>
+   </wvobject>
+</wave_config>

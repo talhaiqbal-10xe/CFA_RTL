@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="39" />
+   <WVObjectSize size="42" />
    <wvobject fp_name="/green_interpolation_tb/green" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">green[11:0]</obj_property>
       <obj_property name="ObjectShortName">green[11:0]</obj_property>
@@ -68,11 +68,25 @@
    <wvobject fp_name="/green_interpolation_tb/Gh_mat" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">Gh_mat[13:0]</obj_property>
       <obj_property name="ObjectShortName">Gh_mat[13:0]</obj_property>
-      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/out" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">out[13:0]</obj_property>
       <obj_property name="ObjectShortName">out[13:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/adder_complete" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">adder_complete[16:0]</obj_property>
+      <obj_property name="ObjectShortName">adder_complete[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/uut/green_h_module/out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">out[13:0]</obj_property>
+      <obj_property name="ObjectShortName">out[13:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/green_interpolation_tb/Gh_mat" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Gh_mat[13:0]</obj_property>
+      <obj_property name="ObjectShortName">Gh_mat[13:0]</obj_property>
       <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/green_interpolation_tb/Gv_mat" type="array" db_ref_id="1">
