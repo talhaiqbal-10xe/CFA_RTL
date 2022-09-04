@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/addressing_bayer_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="addressing_bayer_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="22" />
+   <wvobject fp_name="/addressing_bayer_tb/address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address[21:0]</obj_property>
+      <obj_property name="ObjectShortName">address[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/addressValid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addressValid</obj_property>
+      <obj_property name="ObjectShortName">addressValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/rowUpdateFlag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rowUpdateFlag</obj_property>
+      <obj_property name="ObjectShortName">rowUpdateFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/colUpdateFlag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">colUpdateFlag</obj_property>
+      <obj_property name="ObjectShortName">colUpdateFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[10:0]</obj_property>
+      <obj_property name="ObjectShortName">row[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/col" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col[10:0]</obj_property>
+      <obj_property name="ObjectShortName">col[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/bayerSymbol" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bayerSymbol[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bayerSymbol[1:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/rowMax" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rowMax[10:0]</obj_property>
+      <obj_property name="ObjectShortName">rowMax[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/colMax" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">colMax[10:0]</obj_property>
+      <obj_property name="ObjectShortName">colMax[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/patternSelect" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">patternSelect[1:0]</obj_property>
+      <obj_property name="ObjectShortName">patternSelect[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_bayer_color/patternSelect" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">patternSelect[1:0]</obj_property>
+      <obj_property name="ObjectShortName">patternSelect[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_bayer_color/rowUpdate" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rowUpdate</obj_property>
+      <obj_property name="ObjectShortName">rowUpdate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_bayer_color/colUpdate" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">colUpdate</obj_property>
+      <obj_property name="ObjectShortName">colUpdate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_bayer_color/line0" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">line0[0:1,1:0]</obj_property>
+      <obj_property name="ObjectShortName">line0[0:1,1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_bayer_color/line1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">line1[0:1,1:0]</obj_property>
+      <obj_property name="ObjectShortName">line1[0:1,1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_bayer_color/bayerSymbol" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bayerSymbol[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bayerSymbol[1:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_bayer_color/lineSelect" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lineSelect</obj_property>
+      <obj_property name="ObjectShortName">lineSelect</obj_property>
+   </wvobject>
+</wave_config>

@@ -66,6 +66,7 @@ always @(*)
 begin
 rowComplete =tempCol == colMax-offset-1 && rowReg[filterSize-1]==1;
 frameComplete =tempRow == rowMax-offset-1'b1 && tempCol == colMax-offset-1'b1 && rowReg[filterSize-1]==1;
+ready =rowReg[filterSize-1];
 end
 
 always @(posedge clk)
@@ -80,6 +81,8 @@ if (rst)
 	 tempCol<=12'd0;
 	 ready<=0;
 	 nextState<=`idle;
+	 rowUpdateFlag <=1'b0;
+	 colUpdateFlag <=1'b0;
 	 end
 else
     case (state)
@@ -103,6 +106,7 @@ else
 				   tempRow<=row+offset;
 				   if (colReg[filterSize-1]==1)
 				       begin
+						 colUpdateFlag <= 1'b1;
 						 col<=col+1'b1;
 						 if (en)
 						     begin
@@ -118,6 +122,8 @@ else
 				   end
 			  else
 			      begin
+					colUpdateFlag <= 1'b0;
+					rowUpdateFlag <= 1'b0;
 				   rowReg<={rowReg[filterSize-2:0],rowReg[filterSize-1]};
 				   tempRow<=tempRow+1'b1;
 				   end
@@ -126,11 +132,14 @@ else
 	 `middle:begin // as offset is a negative number so it is being subtracted in the following line for addition,-1 due to 0 as starting index
            if (frameComplete)
 			      begin
+					colUpdateFlag <= 1'b1;
 					state<=`complete;
 				   end
 			  else
 			      if (rowComplete)
 				       begin
+						 colUpdateFlag <= 1'b1;
+						 rowUpdateFlag <= 1'b1;
 						 col<=1'b0;
 						 tempCol<=offset;
 						 row<=row+1'b1;
@@ -149,6 +158,7 @@ else
 			      else
 				       if (rowReg[filterSize-1]==1'b1)
 						     begin
+							  colUpdateFlag <= 1'b1;
 							  col<=col+1'b1;
 							  tempCol<=tempCol+1'b1;
 							  tempRow<=row+offset;
@@ -165,11 +175,15 @@ else
 							  end
 						 else
 						     begin
+							  colUpdateFlag <= 1'b0;
 							  tempRow<=tempRow+1'b1;
 							  rowReg<={rowReg[filterSize-2:0],rowReg[filterSize-1]};
 							  end
-				  end
+				  end				  
+	 
 	 `waiting:begin
+	          colUpdateFlag <= 1'b0;
+				 rowUpdateFlag <= 1'b0;
 	          if (en)
 				     begin
 					  state <=nextState;
@@ -182,7 +196,8 @@ else
 				  
 				  
     `complete: begin
-	           ready<=1;
+	           colUpdateFlag <= 1'b0;
+	           
 				  row<=0;
 				  col<=0;
 				  tempRow<=0;
