@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="22" />
+   <WVObjectSize size="24" />
    <wvobject fp_name="/addressing_bayer_tb/address" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">address[21:0]</obj_property>
       <obj_property name="ObjectShortName">address[21:0]</obj_property>
@@ -34,10 +34,22 @@
    <wvobject fp_name="/addressing_bayer_tb/row" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">row[10:0]</obj_property>
       <obj_property name="ObjectShortName">row[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/addressing_bayer_tb/col" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">col[10:0]</obj_property>
       <obj_property name="ObjectShortName">col[10:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_addressing_logic/tempRow" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tempRow[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tempRow[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/addressing_bayer_tb/uut/uut_addressing_logic/tempCol" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tempCol[11:0]</obj_property>
+      <obj_property name="ObjectShortName">tempCol[11:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/addressing_bayer_tb/bayerSymbol" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">bayerSymbol[1:0]</obj_property>

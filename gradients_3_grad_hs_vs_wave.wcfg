@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/gradients_3_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="gradients_3_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="45" />
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e1t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e1t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e1t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e1t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e1t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e1t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e1[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e2t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e2[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2_scaled" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2_scaled[16:0]</obj_property>
+      <obj_property name="ObjectShortName">e2_scaled[16:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e3t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e3t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e3t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e3t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e3t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e3t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e3[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e3[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e4t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e4[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e4[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4_scaled" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">e4_scaled[16:0]</obj_property>
+      <obj_property name="ObjectShortName">e4_scaled[16:0]</obj_property>
+      <obj_property name="label">e4_scaled[16:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ff00ff</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e5t1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t1[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t1[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e5t2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t2[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e5t3" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t3[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t3[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e5t4" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t4[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t4[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e5t5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5t5[11:0]</obj_property>
+      <obj_property name="ObjectShortName">e5t5[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e5[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#00ffff</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e1[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e1[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e2_scaled" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e2_scaled[16:0]</obj_property>
+      <obj_property name="ObjectShortName">e2_scaled[16:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e4_scaled" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">e4_scaled[16:0]</obj_property>
+      <obj_property name="ObjectShortName">e4_scaled[16:0]</obj_property>
+      <obj_property name="label">e4_scaled[16:0]</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/e5" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">e5[14:0]</obj_property>
+      <obj_property name="ObjectShortName">e5[14:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#800000</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/grad_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_out[16:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_out[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="UseCustomSignalColor">true</obj_property>
+      <obj_property name="CustomSignalColor">#ffa500</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/grad_sum_out1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_sum_out1[18:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_sum_out1[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/grad_sum_out2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_sum_out2[18:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_sum_out2[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/grad_sum_comp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_sum_comp[18:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_sum_comp[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/grad_abs_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_abs_out[18:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_abs_out[18:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/grad_vs_module/pixelBitWidth" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">pixelBitWidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">pixelBitWidth[31:0]</obj_property>
+   </wvobject>
+</wave_config>

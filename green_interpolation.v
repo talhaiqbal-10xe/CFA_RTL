@@ -50,11 +50,15 @@ green_s_f #(12,8,1) green_f_module(clk,rst,w_grad_hf,w_grad_vf,freq_th,green_h,g
 wire [pixelBitWidth-1:0] green_temp;
 green_final #(12,8) final_out_module(clk,rst,W_s,W_f,Gs,Gf,green_temp);
 
-always @ (*)
+always @ (posedge clk)
+if (rst)
+    begin
+	 green <= 0;
+	 end
+else
 begin
-green = green_temp;
+green <= green_temp;
 end
-
 
 
 endmodule

@@ -59,17 +59,24 @@ assign e2_scaled = out_comp_e2<<1;
 wire signed [16:0] e4_scaled;
 assign e4_scaled = out_comp_e4<<1;
 
-// 2's complement of 2nd and fifth
-wire signed [16:0] e2_complement;
-twosComplement #(17) e2_comp(e2_complement,e2_scaled);
 
-wire signed [16:0] e5_complement;
-twosComplement #(17) e5_comp(e5_complement,{{2'b00},out_comp_e5});
 
-// adding all the terms
+//// 2's complement of 2nd and fifth
+//wire signed [16:0] e2_complement;
+//twosComplement #(17) e2_comp(e2_complement,e2_scaled);
+//
+//wire signed [16:0] e5_complement;
+//twosComplement #(17) e5_comp(e5_complement,{{2'b00},out_comp_e5});
+//
+//// adding all the terms
+//wire [18:0] grad_sum_out1,grad_sum_out2,grad_sum_comp;
+//adder4x17 grad_sum(grad_sum_out1,grad_sum_out2,{{2'b00},out_comp_e1},e2_complement,e4_scaled,e5_complement);
+//adder #(19)  grad_adder(grad_sum_comp,grad_sum_out1,grad_sum_out2);
+
 wire [18:0] grad_sum_out1,grad_sum_out2,grad_sum_comp;
-adder4x17 grad_sum(grad_sum_out1,grad_sum_out2,{{2'b00},out_comp_e1},e2_complement,e4_scaled,e5_complement);
-adder #(19)  grad_adder(grad_sum_comp,grad_sum_out1,grad_sum_out2);
+adder4x19 grad_sum(grad_sum_out1,grad_sum_out2,{{4'h0},out_comp_e1},~{{2'b00},e2_scaled},{{2'b00},e4_scaled},~{{4'h0},out_comp_e5});
+adder #(19)  grad_adder(grad_sum_comp,grad_sum_out1[18:0],grad_sum_out2[18:0]);
+
 
 
 // taking absolute
@@ -104,7 +111,7 @@ e2=out_comp_e2;
 e3=out_comp_e3;
 e4=out_comp_e4;
 e5=out_comp_e5;
-grad_out=grad_abs_out[pixelBitWidth+3+2-1:0];
+grad_out=grad_abs_out[pixelBitWidth+3+2 -1:0];
 end
  
 endmodule

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/gradients_3_tb_isim_beh1.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="gradients_3_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="19" />
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/strat" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">strat</obj_property>
+      <obj_property name="ObjectShortName">strat</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_hs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_vs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vs[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_hs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_vs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vs[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vs[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_hs_vs_sum_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs_vs_sum_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs_vs_sum_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/scaled_hs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_hs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_hs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/scaled_vs" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">scaled_vs[7:0]</obj_property>
+      <obj_property name="ObjectShortName">scaled_vs[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_hs_zd_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs_zd_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs_zd_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_vs_zd_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_vs_zd_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_vs_zd_out[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/grad_hs_vs_sum_out" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">grad_hs_vs_sum_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">grad_hs_vs_sum_out[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/temp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">temp[23:0]</obj_property>
+      <obj_property name="ObjectShortName">temp[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/dividend" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">dividend[23:0]</obj_property>
+      <obj_property name="ObjectShortName">dividend[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/divisor" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">divisor[15:0]</obj_property>
+      <obj_property name="ObjectShortName">divisor[15:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/quotient" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">quotient[7:0]</obj_property>
+      <obj_property name="ObjectShortName">quotient[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/gradients_3_tb/uut/scaled_hs_vs_module/remainder" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">remainder[15:0]</obj_property>
+      <obj_property name="ObjectShortName">remainder[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

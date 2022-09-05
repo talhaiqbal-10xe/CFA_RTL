@@ -35,7 +35,7 @@ input signed [colBitWidth -1:0] colMax,
 input en,
 output [rowBitWidth+colBitWidth -1:0] address,
 output addressValid,
-output reg ready,
+output reg ready,done,
 output reg rowUpdateFlag,
 output reg colUpdateFlag,
 output reg [rowBitWidth -1:0] row,
@@ -80,6 +80,7 @@ if (rst)
 	 tempRow<=12'd0;
 	 tempCol<=12'd0;
 	 ready<=0;
+	 done<=1'b0;
 	 nextState<=`idle;
 	 rowUpdateFlag <=1'b0;
 	 colUpdateFlag <=1'b0;
@@ -134,6 +135,7 @@ else
 			      begin
 					colUpdateFlag <= 1'b1;
 					state<=`complete;
+					done <=1'b1;
 				   end
 			  else
 			      if (rowComplete)
@@ -204,6 +206,7 @@ else
 				  tempCol<=0;
               if (start)
                  state<=`idle;
+					  done <= 1'b0;
 				  end
              		 
 			 

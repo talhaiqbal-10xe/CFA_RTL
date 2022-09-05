@@ -21,7 +21,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module buffer_nx2D
-#(parameter filterSize=3,parameter NoOfChannels=3,parameter filterBitWidth=4,
+#(parameter filterSize=5,parameter NoOfChannels=4,parameter filterBitWidth=12,
   parameter filterRowSize= filterSize*filterBitWidth, parameter filterChannelSize=filterRowSize*filterSize
   )
 (
