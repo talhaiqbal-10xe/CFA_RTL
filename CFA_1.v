@@ -40,6 +40,7 @@ input [dataBitWidth -1:0] greenRead,redRead,blueRead,
 input [7:0] grad_th0,grad_th1,intrp_th0,intrp_th1,
 input [8:0] blend_th0,blend_th1,
 input [1:0] patternSelect,
+output rowUpdate,colUpdate,
 output  [addressBitWidth -1:0] readAddress,
 output reg [addressBitWidth -1:0] writeAddress,
 output  [2:0] writeEnable,
@@ -54,7 +55,8 @@ wire [rowBitWidth -1:0] row;
 wire [colBitWidth -1:0] col;
 wire addressEnable;
 assign addressEnable = 1'b1; 
-
+assign rowUpdate = rowUpdateFlag;
+assign colUpdate = colUpdateFlag;
 
 addressing_bayer addressingBayerModule (
 		.clk(clk), 

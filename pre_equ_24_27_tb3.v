@@ -59,7 +59,7 @@ module pre_equ_24_27_tb3;
    assign match= out_mat==RB;	
 integer outfile0;
 
-	initial begin
+	initial begin 
           clk=0;
           rst=1;
 			 #20
