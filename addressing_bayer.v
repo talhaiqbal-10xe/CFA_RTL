@@ -25,10 +25,10 @@ input clk,rst,start,
 input signed [rowBitWidth -1:0] rowMax,
 input signed [colBitWidth -1:0] colMax,
 input en,
-output [rowBitWidth+colBitWidth -1:0] address,
+output [addressBitWidth -1:0] address,
 input [1:0] patternSelect,
 output  addressValid,
-output  ready,
+output  ready,done,bufferEnable,
 output  rowUpdateFlag,
 output  colUpdateFlag,
 output  [rowBitWidth -1:0] row,
@@ -37,7 +37,7 @@ output  [1:0] bayerSymbol
 );
 
 // Instantiate the Unit Under Test (UUT)
-	addressing_logic uut_addressing_logic (
+	addressing_logic conv2dAddressingLogic (
 		.clk(clk), 
 		.rst(rst), 
 		.start(start), 
@@ -46,14 +46,16 @@ output  [1:0] bayerSymbol
 		.en(en), 
 		.address(address), 
 		.addressValid(addressValid), 
-		.ready(ready), 
+		.ready(ready),
+      .done(done),
+      .bufferEnable(bufferEnable),		
 		.rowUpdateFlag(rowUpdateFlag), 
 		.colUpdateFlag(colUpdateFlag), 
 		.row(row), 
 		.col(col)
 	);
 
-bayer_color uut_bayer_color (
+bayer_color BayerColorModule (
 		.clk(clk), 
 		.rst(rst), 
 		.start(start), 

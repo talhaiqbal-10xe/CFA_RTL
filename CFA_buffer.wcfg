@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/CFA_1_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CFA_1_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/CFA_1_tb/uut/array[0]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[0,0:4,0:4,11:0]</obj_property>
+      <obj_property name="ObjectShortName">array[0,0:4,0:4,11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/CFA_1_tb/uut/array[0,0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,0,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">array[0,0,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/array[0,1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,1,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">array[0,1,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/array[0,2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,2,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">array[0,2,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/array[0,3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,3,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">array[0,3,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/array[0,4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,4,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">array[0,4,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/colUpdateFlag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">colUpdateFlag</obj_property>
+      <obj_property name="ObjectShortName">colUpdateFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/regFile[0]" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">[0,0:4,0:4,11:0]</obj_property>
+      <obj_property name="ObjectShortName">regFile[0,0:4,0:4,11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/CFA_1_tb/uut/regFile[0,0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,0,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">regFile[0,0,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/regFile[0,1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,1,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">regFile[0,1,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/regFile[0,2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,2,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">regFile[0,2,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/regFile[0,3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,3,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">regFile[0,3,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_1_tb/uut/regFile[0,4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,4,0:4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">regFile[0,4,0:4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

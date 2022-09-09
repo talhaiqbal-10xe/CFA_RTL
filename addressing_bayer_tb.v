@@ -37,6 +37,8 @@ module addressing_bayer_tb;
 	wire [21:0] address;
 	wire addressValid;
 	wire ready;
+	wire done;
+	wire bufferEnable;
 	wire rowUpdateFlag;
 	wire colUpdateFlag;
 	wire [10:0] row;
@@ -54,7 +56,9 @@ module addressing_bayer_tb;
 		.address(address), 
 		.patternSelect(patternSelect), 
 		.addressValid(addressValid), 
-		.ready(ready), 
+		.ready(ready),
+      .done(done),
+      .bufferEnable(bufferEnable),		
 		.rowUpdateFlag(rowUpdateFlag), 
 		.colUpdateFlag(colUpdateFlag), 
 		.row(row), 

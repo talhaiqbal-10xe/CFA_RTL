@@ -33,9 +33,9 @@ input clk,rst,start,
 input signed [rowBitWidth -1:0] rowMax,
 input signed [colBitWidth -1:0] colMax,
 input en,
-output [rowBitWidth+colBitWidth -1:0] address,
+output [addressBitWidth -1:0] address,
 output addressValid,
-output reg ready,done,
+output reg ready,done,bufferEnable,
 output reg rowUpdateFlag,
 output reg colUpdateFlag,
 output reg [rowBitWidth -1:0] row,
@@ -59,7 +59,9 @@ assign offset = `Offset;
 assign addressValid = (tempRow>=0 && tempRow <=rowMax-1) && (tempCol >=0 && tempCol <=colMax-1);
 
 // address generation Block
-address_gen address_module(colMax,rowInp,colInp,address);
+wire [colBitWidth+rowBitWidth -1:0] addressTemp;
+address_gen address_module(colMax,rowInp,colInp,addressTemp);
+assign address = addressTemp[addressBitWidth -1:0];
 
 reg rowComplete,frameComplete;
 always @(*)
@@ -84,6 +86,7 @@ if (rst)
 	 nextState<=`idle;
 	 rowUpdateFlag <=1'b0;
 	 colUpdateFlag <=1'b0;
+	 bufferEnable <= 1'b0;
 	 end
 else
     case (state)
@@ -93,6 +96,7 @@ else
 				 state<=`left;
 				 tempRow<=offset;
 				 tempCol<=offset;
+				 bufferEnable <= 1'b1;
 				 end				 
 			 end
 
@@ -117,6 +121,7 @@ else
 						     begin
 							  nextState <= `middle;
 							  state <= `waiting;
+							  bufferEnable <= 1'b0;
 							  end				  
 						     
 						 end
@@ -136,6 +141,7 @@ else
 					colUpdateFlag <= 1'b1;
 					state<=`complete;
 					done <=1'b1;
+					bufferEnable <= 1'b0;
 				   end
 			  else
 			      if (rowComplete)
@@ -155,6 +161,7 @@ else
 						     begin
 							  nextState <= `left;
 							  state <= `waiting;
+							  bufferEnable <= 1'b0;
 							  end		
 						 end
 			      else
@@ -173,6 +180,7 @@ else
 									begin
 									nextState <= `middle;
 									state <= `waiting;
+									bufferEnable <= 1'b0;
 									end		
 							  end
 						 else
@@ -189,6 +197,7 @@ else
 	          if (en)
 				     begin
 					  state <=nextState;
+					  bufferEnable <= 1'b1;
 					  end
 				 else
 				     begin
@@ -199,14 +208,15 @@ else
 				  
     `complete: begin
 	           colUpdateFlag <= 1'b0;
-	           
+              bufferEnable <= 1'b0;	           
 				  row<=0;
 				  col<=0;
 				  tempRow<=0;
 				  tempCol<=0;
               if (start)
-                 state<=`idle;
+                 state<=`left;
 					  done <= 1'b0;
+					  bufferEnable <= 1'b1;
 				  end
              		 
 			 

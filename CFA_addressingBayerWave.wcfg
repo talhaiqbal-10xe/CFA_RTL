@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL/CFA_1_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CFA_1_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/rowMax" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rowMax[10:0]</obj_property>
+      <obj_property name="ObjectShortName">rowMax[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/colMax" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">colMax[10:0]</obj_property>
+      <obj_property name="ObjectShortName">colMax[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/en" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">en</obj_property>
+      <obj_property name="ObjectShortName">en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address[21:0]</obj_property>
+      <obj_property name="ObjectShortName">address[21:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/patternSelect" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">patternSelect[1:0]</obj_property>
+      <obj_property name="ObjectShortName">patternSelect[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/addressValid" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addressValid</obj_property>
+      <obj_property name="ObjectShortName">addressValid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ready</obj_property>
+      <obj_property name="ObjectShortName">ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/bufferEnable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">bufferEnable</obj_property>
+      <obj_property name="ObjectShortName">bufferEnable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/rowUpdateFlag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rowUpdateFlag</obj_property>
+      <obj_property name="ObjectShortName">rowUpdateFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/colUpdateFlag" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">colUpdateFlag</obj_property>
+      <obj_property name="ObjectShortName">colUpdateFlag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/row" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">row[10:0]</obj_property>
+      <obj_property name="ObjectShortName">row[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/col" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">col[10:0]</obj_property>
+      <obj_property name="ObjectShortName">col[10:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/bayerSymbol" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">bayerSymbol[1:0]</obj_property>
+      <obj_property name="ObjectShortName">bayerSymbol[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/addressBitWidth" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addressBitWidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">addressBitWidth[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/rowBitWidth" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rowBitWidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rowBitWidth[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/colBitWidth" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">colBitWidth[31:0]</obj_property>
+      <obj_property name="ObjectShortName">colBitWidth[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_1_tb/uut/addressingBayerModule/filterSize" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">filterSize[31:0]</obj_property>
+      <obj_property name="ObjectShortName">filterSize[31:0]</obj_property>
+   </wvobject>
+</wave_config>
