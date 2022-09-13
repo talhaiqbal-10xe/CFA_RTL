@@ -34,8 +34,8 @@ output reg [pixelBitWidth-1:0] green
     );
 wire [pixelBitWidth+2 -1:0] green_h,green_v;
 wire [pixelBitWidth+1 -1:0] absolute_diff;
-green_h_v green_v_module(clk,rst,p_p0_m2,p_p0_m1,p_p0_p0,p_p0_p1,p_p0_p2,green_v);
-green_h_v green_h_module(clk,rst,p_m2_p0,p_m1_p0,p_p0_p0,p_p1_p0,p_p2_p0,green_h);
+green_h_v green_v_module(clk,rst,p_p0_m2,p_p0_m1,p_p0_p0,p_p0_p1,p_p0_p2,green_h);
+green_h_v green_h_module(clk,rst,p_m2_p0,p_m1_p0,p_p0_p0,p_p1_p0,p_p2_p0,green_v);
 
 abs_diff #(pixelBitWidth+2) abs_diff_module(absolute_diff,green_h,green_v);
 

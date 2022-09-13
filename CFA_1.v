@@ -186,7 +186,7 @@ green_interpolation greenInterpolationModule (
 		.p_p1_p0(regFile[0][3][2]), 
 		.p_p2_p0(regFile[0][4][2]), 
 		.scaled_hs(grad_hs_temp), 
-		.scaled_vs(grad_hs_temp), 
+		.scaled_vs(grad_vs_temp), 
 		.w_grad_hf(w_grad_hf_temp), 
 		.w_grad_vf(w_grad_vf_temp), 
 		.spatial_th(intrp_th0), 

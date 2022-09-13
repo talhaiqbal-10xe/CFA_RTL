@@ -89,7 +89,8 @@ module CFA_1_tb
 	);
    
 	reg [11:0] buffer [0:4][0:4];
-	
+	reg [18:0] grad_hs_sum,grad_vs_sum;
+	reg [15:0] grad_hs_abs,grad_vs_abs;
 	reg [7:0] scaled_hs,scaled_vs,grad_hf,grad_vf,w_grad_hf,w_grad_vf;
 	reg [13:0] green_h,green_v;
 	reg [7:0] w_s,w_f;
@@ -97,6 +98,7 @@ module CFA_1_tb
 	reg [11:0] greenTemp,greenFinal;
 	
 	reg [11:0] mem [0:`row * `col -1];
+	reg [11:0] mem_ref_out [0:`row * `col -1];
    reg [11:0] mem_out [0: `row * `col -1];
 	
    
@@ -104,9 +106,10 @@ module CFA_1_tb
 	initial 
 	begin
 		// Initialize Inputs
-		outfile0=$fopen("4_70rowsRawOutputs.txt","w");
-		outfile1=$fopen("6_70x70InputsAndOutputs.txt","r");
-		$readmemb("3_raw70x70binaryInputsNS.txt", mem);
+		outfile0=$fopen("70x70VerilogOutputsNS.txt","w");
+		outfile1=$fopen("70x70InputsAndOutputs.txt","r");
+		$readmemb("70x70_rawBinaryNS.txt", mem);
+		//$readmemb("3_70binaryOutputsNS.txt", mem_ref_out);
 		clk = 0;
 		rst = 1;
 		start =0;
@@ -152,13 +155,15 @@ if (colUpdate)
     if (! $feof(outfile1))
 	      begin
 			k=k+1;
-	      $fscanf(outfile1,"%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d \n",
+	      $fscanf(outfile1,"%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d \n",
 			                 buffer[0][0],buffer[0][1],buffer[0][2],buffer[0][3],buffer[0][4],
 								  buffer[1][0],buffer[1][1],buffer[1][2],buffer[1][3],buffer[1][4],
 								  buffer[2][0],buffer[2][1],buffer[2][2],buffer[2][3],buffer[2][4],
 								  buffer[3][0],buffer[3][1],buffer[3][2],buffer[3][3],buffer[3][4],
 								  buffer[4][0],buffer[4][1],buffer[4][2],buffer[4][3],buffer[4][4],
-		 						  scaled_hs,scaled_vs,grad_hf,grad_vf,w_grad_hf,w_grad_vf,
+		 						  grad_hs_sum,grad_vs_sum,
+								  grad_hs_abs,grad_vs_abs,
+								  scaled_hs,scaled_vs,grad_hf,grad_vf,w_grad_hf,w_grad_vf,
 								  green_h,green_v,
 								  w_s,w_f,
 								  green_s,green_f,
