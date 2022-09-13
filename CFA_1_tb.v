@@ -88,31 +88,8 @@ module CFA_1_tb
 		.blueWrite(blueWrite)
 	);
    
-	reg [11:0] p_m2_m2;
-	reg [11:0] p_m2_m1;
-	reg [11:0] p_m2_p0;
-	reg [11:0] p_m2_p1;
-	reg [11:0] p_m2_p2;
-	reg [11:0] p_m1_m2;
-	reg [11:0] p_m1_m1;
-	reg [11:0] p_m1_p0;
-	reg [11:0] p_m1_p1;
-	reg [11:0] p_m1_p2;
-	reg [11:0] p_p0_m2;
-	reg [11:0] p_p0_m1;
-	reg [11:0] p_p0_p0;
-	reg [11:0] p_p0_p1;
-	reg [11:0] p_p0_p2;
-	reg [11:0] p_p1_m2;
-	reg [11:0] p_p1_m1;
-	reg [11:0] p_p1_p0;
-	reg [11:0] p_p1_p1;
-	reg [11:0] p_p1_p2;
-	reg [11:0] p_p2_m2;
-	reg [11:0] p_p2_m1;
-	reg [11:0] p_p2_p0;
-	reg [11:0] p_p2_p1;
-	reg [11:0] p_p2_p2;
+	reg [11:0] buffer [0:4][0:4];
+	
 	reg [7:0] scaled_hs,scaled_vs,grad_hf,grad_vf,w_grad_hf,w_grad_vf;
 	reg [13:0] green_h,green_v;
 	reg [7:0] w_s,w_f;
@@ -129,7 +106,7 @@ module CFA_1_tb
 		// Initialize Inputs
 		outfile0=$fopen("4_70rowsRawOutputs.txt","w");
 		outfile1=$fopen("6_70x70InputsAndOutputs.txt","r");
-		$readmemb("3_70rowsRawOutputs.txt", mem);
+		$readmemb("3_raw70x70binaryInputsNS.txt", mem);
 		clk = 0;
 		rst = 1;
 		start =0;
@@ -176,12 +153,12 @@ if (colUpdate)
 	      begin
 			k=k+1;
 	      $fscanf(outfile1,"%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d \n",
-			                 p_m2_m2,p_m2_m1,p_m2_p0,p_m2_p1,p_m2_p2,
-		 						  p_m1_m2,p_m1_m1,p_m1_p0,p_m1_p1,p_m1_p2,
-								  p_p0_m2,p_p0_m1,p_p0_p0,p_p0_p1,p_p0_p2,
-								  p_p1_m2,p_p1_m1,p_p1_p0,p_p1_p1,p_p1_p2,
-								  p_p2_m2,p_p2_m1,p_p2_p0,p_p2_p1,p_p2_p2,
-								  scaled_hs,scaled_vs,grad_hf,grad_vf,w_grad_hf,w_grad_vf,
+			                 buffer[0][0],buffer[0][1],buffer[0][2],buffer[0][3],buffer[0][4],
+								  buffer[1][0],buffer[1][1],buffer[1][2],buffer[1][3],buffer[1][4],
+								  buffer[2][0],buffer[2][1],buffer[2][2],buffer[2][3],buffer[2][4],
+								  buffer[3][0],buffer[3][1],buffer[3][2],buffer[3][3],buffer[3][4],
+								  buffer[4][0],buffer[4][1],buffer[4][2],buffer[4][3],buffer[4][4],
+		 						  scaled_hs,scaled_vs,grad_hf,grad_vf,w_grad_hf,w_grad_vf,
 								  green_h,green_v,
 								  w_s,w_f,
 								  green_s,green_f,
@@ -197,6 +174,7 @@ always #halfCycle
 begin 
 clk=~clk;
 end    
+
 
 always @(*) 
 raw = mem[readAddress[12:0]];

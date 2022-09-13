@@ -81,7 +81,7 @@ adder #(19)  grad_adder(grad_sum_comp,grad_sum_out1[18:0],grad_sum_out2[18:0]);
 
 // taking absolute
 wire [18:0] grad_abs_out;
-abs #(19) grad_hs_abs(grad_abs_out,grad_sum_comp);
+absolute_value #(19) grad_hs_abs(grad_abs_out,grad_sum_comp);
 
 //always @ (posedge clk)
 //if (rst)

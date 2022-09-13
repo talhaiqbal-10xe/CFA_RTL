@@ -36,11 +36,11 @@ n_bitSubtractor #(12) sub_5(s5,mean_1,e5);
 
 // absolute
 wire [pixelBitWidth-1:0] a1,a2,a3,a4,a5;
-abs #(12) grad_abs1(a1,s1);
-abs #(12) grad_abs2(a2,s2);
-abs #(12) grad_abs3(a3,s3);
-abs #(12) grad_abs4(a4,s4);
-abs #(12) grad_abs5(a5,s5);
+absolute_value #(12) grad_abs1(a1,s1);
+absolute_value #(12) grad_abs2(a2,s2);
+absolute_value #(12) grad_abs3(a3,s3);
+absolute_value #(12) grad_abs4(a4,s4);
+absolute_value #(12) grad_abs5(a5,s5);
 
 
 // bit width extension and shifts

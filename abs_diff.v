@@ -29,7 +29,7 @@ wire [pixelBitWidth -1:0] diff;
 n_bitSubtractor #(pixelBitWidth) sub1(diff,green_h,green_v);
 
 wire [pixelBitWidth-1:0] abs_out;
-abs #(pixelBitWidth) abs_module(abs_out,diff);
+absolute_value #(pixelBitWidth) abs_module(abs_out,diff);
 
 always @(*)
 begin

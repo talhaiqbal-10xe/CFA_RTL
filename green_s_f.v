@@ -57,7 +57,7 @@ if (divider==1)
     begin
 	 // getting dividend ready
 	 wire [weightBitWidth+pixelBitWidth+1+1 -1:0] temp1,dividend;
-	 abs #(weightBitWidth+pixelBitWidth+1+1) abs_numenator(dividend,numenator);
+	 absolute_value #(weightBitWidth+pixelBitWidth+1+1) abs_numenator(dividend,numenator);
 	 
 	 // getting the divider ready
 	 wire [weightBitWidth+1 -1:0] divisor;

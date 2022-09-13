@@ -131,7 +131,7 @@ buffer_nx2D Buffer_4D(
 wire [filterBitWidth -1:0] array [0:NoOfChannels-1][0:filterSize-1][0:filterSize-1]; // channel wise data
 
 genvar i,j,k;
-generate 
+generate  
 for (i=0; i <= NoOfChannels-1; i=i+1)
      for (j=0; j <= filterSize-1; j=j+1)
 	       for (k=0; k <= filterSize-1; k=k+1)

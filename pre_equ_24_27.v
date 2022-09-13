@@ -10,7 +10,7 @@
 // Target Devices: 
 // Tool versions: 
 // Description: 
-//
+//                4.56ns
 // Dependencies: 
 //
 // Revision: 

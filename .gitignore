@@ -54,3 +54,4 @@ xst/
 /isim
 *.projectmgr
 *.mem
+*NS.txt
