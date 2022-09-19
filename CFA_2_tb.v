@@ -119,16 +119,13 @@ module CFA_2_tb
 		start =0;
 		rowMax = `row;
 		colMax = `col;
-		greenRead = 0;
-		redRead = 0;
-		blueRead = 0;
 		grad_th0 = 0;
 		grad_th1 = 128;
 		intrp_th0 = 77;
 		intrp_th1 = 179;
 		blend_th0 = 100;
 		blend_th1 = 300;
-		patternSelect = 2'b11;
+		patternSelect = 2'b00;
 		#fullCycle
 		rst =0;
 		start =1;
@@ -176,7 +173,7 @@ if (colUpdate)
 		else
 		    $fclose(outfile1);
 		
-		end
+	 end
 								  
 								  
 always #halfCycle 
@@ -185,8 +182,13 @@ clk=~clk;
 end    
  
 
-always @(*) 
+always @(*)
+begin 
 raw = mem[readAddress[12:0]];
+greenRead =  mem_green[readAddress[12:0]];
+redRead = mem_red[readAddress[12:0]];
+blueRead = mem_blue[readAddress[12:0]];
+end
 
 always @(posedge clk)
 begin

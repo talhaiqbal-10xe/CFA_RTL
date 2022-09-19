@@ -291,78 +291,101 @@ assign writeEnable [2] = wrEnBlue && delayReg[2];
 
 
 reg wrEnGreen,wrEnRed,wrEnBlue;
-always @(posedge clk)
+always @(*)
 if (state == `greenIntrp)   // green interpolation is being performed
     begin
     if (currentBayer ==	`green) // the raw pixel is green during green interpplation
         begin
-        greenWrite <= regFile[0][2][2];
-		  wrEnGreen <= 1'b1;
-		  wrEnRed <= 1'b0;
-		  wrEnBlue <= 1'b0;
+        greenWrite = regFile[0][2][2];
+		  wrEnGreen = 1'b1;
+		  wrEnRed = 1'b0;
+		  wrEnBlue = 1'b0;
 		  end 
 	 else
 	    if (currentBayer ==	`red) // the raw pixel is green during green interpplation
            begin
-           greenWrite <= greenTemp;
-		     redWrite <= regFile[0][2][2];
-		     wrEnGreen <= 1'b1;
-		     wrEnRed <= 1'b1;
-		     wrEnBlue <= 1'b0;
+           greenWrite = greenTemp;
+		     redWrite = regFile[0][2][2];
+		     wrEnGreen = 1'b1;
+		     wrEnRed = 1'b1;
+		     wrEnBlue = 1'b0;
 		     end
 		 else
 		     begin
-           greenWrite <= greenTemp;
-		     blueWrite <= regFile[0][2][2];
-		     wrEnGreen <= 1'b1;
-		     wrEnRed <= 1'b0;
-		     wrEnBlue <= 1'b1;
+           greenWrite = greenTemp;
+		     blueWrite = regFile[0][2][2];
+		     wrEnGreen = 1'b1;
+		     wrEnRed = 1'b0;
+		     wrEnBlue = 1'b1;
 		     end
 	 end
 else
-    if (state == `RBIntrp)   // green interpolation is being performed
+    if (state == `RBIntrp && currentBayer ==	`green )   // green interpolation is being performed
         
-		  if (currentBayer ==	`green) // the raw pixel is green during green interpplation
-				begin
-				redWrite <= RonGTemp;
-				blueWrite <= BonGTemp;
-				wrEnGreen <= 1'b0;
-				wrEnRed <= 1'b1;
-				wrEnBlue <= 1'b1;
+		  		begin
+				redWrite = RonGTemp;
+				blueWrite = BonGTemp;
+				wrEnGreen = 1'b0;
+				wrEnRed = 1'b1;
+				wrEnBlue = 1'b1;
 				end 
 		  else
-				if (currentBayer ==	`red) // the raw pixel is green during green interpplation
+				if (state == `RBIntrp && currentBayer ==	`red) // the raw pixel is green during green interpplation
 					 begin
-					 blueWrite <= RBTemp;
-					 wrEnGreen <= 1'b0;
-					 wrEnRed <= 1'b0;
-					 wrEnBlue <= 1'b1;
+					 blueWrite = RBTemp;
+					 wrEnGreen = 1'b0;
+					 wrEnRed = 1'b0;
+					 wrEnBlue = 1'b1;
 					 end
-			  else
-					begin
-					redWrite <= RBTemp;
-					wrEnGreen <= 1'b0;
-					wrEnRed <= 1'b1;
-					wrEnBlue <= 1'b0;
-					end
+			   else
+					 if (state == `RBIntrp && currentBayer ==	`blue) // the raw pixel is green during green interpplation
+					 begin
+					 redWrite = RBTemp;
+					 wrEnGreen = 1'b0;
+					 wrEnRed = 1'b1;
+					 wrEnBlue = 1'b0;
+					 end
 	     
 	 else
 	     begin
-		  wrEnGreen <= 1'b0;
-		  wrEnRed <= 1'b0;
-		  wrEnBlue <= 1'b0;
+		  wrEnGreen = 1'b0;
+		  wrEnRed = 1'b0;
+		  wrEnBlue = 1'b0;
 		  end
+
+
+
+//    if (state == `RBIntrp)   // green interpolation is being performed
+//        
+//		  if (currentBayer ==	`green) // the raw pixel is green during green interpplation
+//				begin
+//				redWrite = RonGTemp;
+//				blueWrite = BonGTemp;
+//				wrEnGreen = 1'b0;
+//				wrEnRed = 1'b1;
+//				wrEnBlue = 1'b1;
+//				end 
+//		  else
+//				if (currentBayer ==	`red) // the raw pixel is green during green interpplation
+//					 begin
+//					 blueWrite = RBTemp;
+//					 wrEnGreen = 1'b0;
+//					 wrEnRed = 1'b0;
+//					 wrEnBlue = 1'b1;
+//					 end
+//			   else
+//					 begin
+//					 redWrite = RBTemp;
+//					 wrEnGreen = 1'b0;
+//					 wrEnRed = 1'b1;
+//					 wrEnBlue = 1'b0;
+//					end
+//	     
+//	 else
+//	     begin
+//		  wrEnGreen = 1'b0;
+//		  wrEnRed = 1'b0;
+//		  wrEnBlue = 1'b0;
+//		  end
 		  
-		
-
-		  
-		  
-		  
-
-
-
-
-
-
-
 endmodule
