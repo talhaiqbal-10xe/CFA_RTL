@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/user3/Downloads/Documents/CFA_RTL - Copy/CFA_2_tb_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="CFA_2_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="18" />
+   <wvobject fp_name="/CFA_2_tb/uut/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/rowUpdate" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rowUpdate</obj_property>
+      <obj_property name="ObjectShortName">rowUpdate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/colUpdate" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">colUpdate</obj_property>
+      <obj_property name="ObjectShortName">colUpdate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/readAddress" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">readAddress[16:0]</obj_property>
+      <obj_property name="ObjectShortName">readAddress[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/writeAddress" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">writeAddress[16:0]</obj_property>
+      <obj_property name="ObjectShortName">writeAddress[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/greenFinal" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">greenFinal[11:0]</obj_property>
+      <obj_property name="ObjectShortName">greenFinal[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/greenWrite" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">greenWrite[11:0]</obj_property>
+      <obj_property name="ObjectShortName">greenWrite[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/redWrite" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">redWrite[11:0]</obj_property>
+      <obj_property name="ObjectShortName">redWrite[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/currentBayer" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">currentBayer[1:0]</obj_property>
+      <obj_property name="ObjectShortName">currentBayer[1:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/writeEnable[1]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[1]</obj_property>
+      <obj_property name="ObjectShortName">writeEnable[1]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/blueWrite" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">blueWrite[11:0]</obj_property>
+      <obj_property name="ObjectShortName">blueWrite[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/writeEnable[2]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">writeEnable[2]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/addressStart" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addressStart</obj_property>
+      <obj_property name="ObjectShortName">addressStart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">state[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/wrEnGreen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wrEnGreen</obj_property>
+      <obj_property name="ObjectShortName">wrEnGreen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/wrEnRed" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wrEnRed</obj_property>
+      <obj_property name="ObjectShortName">wrEnRed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/wrEnBlue" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">wrEnBlue</obj_property>
+      <obj_property name="ObjectShortName">wrEnBlue</obj_property>
+   </wvobject>
+</wave_config>

@@ -45,6 +45,7 @@ input [7:0] grad_th0,grad_th1,intrp_th0,intrp_th1,
 input [8:0] blend_th0,blend_th1,
 input [1:0] patternSelect,
 output rowUpdate,colUpdate,
+output reg done,
 output  [addressBitWidth -1:0] readAddress,
 output reg [addressBitWidth -1:0] writeAddress,
 output  [2:0] writeEnable,
@@ -53,11 +54,12 @@ output reg [dataBitWidth -1:0] greenWrite,redWrite,blueWrite
 
 
 
-wire addressValid,bufferReady,rowUpdateFlag,colUpdateFlag,done,bufferEnable;
+wire addressValid,bufferReady,rowUpdateFlag,colUpdateFlag,frameDone,bufferEnable;
 wire [1:0] bayerSymbol;
 wire [rowBitWidth -1:0] row;
 wire [colBitWidth -1:0] col;
 wire addressEnable;
+reg addressStart;
 assign addressEnable = 1'b1; 
 assign rowUpdate = rowUpdateFlag;
 assign colUpdate = colUpdateFlag;
@@ -65,7 +67,7 @@ assign colUpdate = colUpdateFlag;
 addressing_bayer addressingBayerModule (
 		.clk(clk), 
 		.rst(rst), 
-		.start(start), 
+		.start(addressStart), 
 		.rowMax(rowMax), 
 		.colMax(colMax), 
 		.en(addressEnable), 
@@ -73,7 +75,7 @@ addressing_bayer addressingBayerModule (
 		.patternSelect(patternSelect), 
 		.addressValid(addressValid), 
 		.ready(bufferReady),
-      .done(done),
+      .done(frameDone),
       .bufferEnable(bufferEnable),		
 		.rowUpdateFlag(rowUpdateFlag), 
 		.colUpdateFlag(colUpdateFlag), 
@@ -82,10 +84,11 @@ addressing_bayer addressingBayerModule (
 		.bayerSymbol(bayerSymbol)
 	);
 
+
 wire [addressBitWidth -1:0] currentAddressWrite;
 counter counterModule (
 		.clk(clk), 
-		.rst(rst), 
+		.rst(rst || addressStart), 
 		.en(colUpdateFlag), 
 		.address(currentAddressWrite)
 	);
@@ -146,7 +149,7 @@ gradients_3 gradients_module (
 		.w_grad_hf(w_grad_hf_temp), .w_grad_vf(w_grad_vf_temp) );
 		
 
-wire [dataBitWidth -1:0] greenTemp,redTemp,blueTemp,RBTemp;
+wire [dataBitWidth -1:0] greenTemp,RonGTemp,BonGTemp,RBTemp;
 green_interpolation greenInterpolationModule (
 		.clk(clk), 
 		.rst(rst), 
@@ -182,11 +185,11 @@ RB_on_BR RBonBR_module (
 		.RB_m1_p1(regFile[0][1][3]), 
 		.RB_p1_m1(regFile[0][3][1]), 
 		.RB_p1_p1(regFile[0][3][3]), 
-		.out(RBTemp)
+		.RB(RBTemp)
 	);
 	
 
-RB_on_G uut (
+RB_on_G RB_on_G_Module (
 		.clk(clk), 
 		.rst(rst), 
 		.green(regFile[1][2][2]), 
@@ -202,10 +205,10 @@ RB_on_G uut (
 		.bh_m1(regFile[3][2][1]), 
 		.bh_p1(regFile[3][2][3]), 
 		.bv_p1(regFile[3][3][2]),
-		.scaled_hs(scaled_hs), 
-		.scaled_vs(scaled_vs), 
-		.red(redTemp), 
-		.blue(blueTemp)
+		.scaled_hs(grad_hs_temp), 
+		.scaled_vs(grad_vs_temp), 
+		.red(RonGTemp), 
+		.blue(BonGTemp)
 	);
 
 reg [2:0] state;
@@ -213,7 +216,7 @@ always @(posedge clk)
 if (rst)
     begin
 	 state <= `idle;
-	 
+	 done <= 1'b0;
 	 end
 else
     case (state)
@@ -221,27 +224,40 @@ else
 	         if (start)
 				    begin
 					 state <= `greenIntrp;
+					 addressStart<=1'b1;
 					 end
 	         
 				
 				end
 	 `greenIntrp : begin
-	               if (done)
-	               
-                          
-
-                  end
+	               if (frameDone)
+	                   begin
+							 addressStart<=1'b1;
+						    state<=`RBIntrp;
+						    end
+						else
+						    begin
+							 addressStart<=1'b0;
+						    state<=`greenIntrp;
+							 end
+					   end
 								  
 	 `RBIntrp : begin
-                          
+               if (frameDone)
+	                begin
+                      done <= 1'b1;						 
+						    state<=`idle;
+						 end
+					else
+						 begin
+						 addressStart<=1'b0;
+						 state<=`RBIntrp;
+						 end           
 
-                end
+               end
 					 
 	 default : state <= `idle;
 	 endcase			
-
-
-
 
 
 reg [1:0] currentBayer;
@@ -267,18 +283,85 @@ else
 	 delayReg[1] <= delayReg[0];
 	 delayReg[2] <= delayReg[1];
 	 end
-assign writeEnable[2] = delayReg[2];
-assign writeEnable [1:0] = 2'b00;	 
+assign writeEnable [0] = wrEnGreen && delayReg[2];
+assign writeEnable [1] = wrEnRed && delayReg[2];
+assign writeEnable [2] = wrEnBlue && delayReg[2];  
 
-always @(*)
-if (currentBayer == `green )
+
+
+
+reg wrEnGreen,wrEnRed,wrEnBlue;
+always @(posedge clk)
+if (state == `greenIntrp)   // green interpolation is being performed
     begin
-	 greenWrite = rawReg;
+    if (currentBayer ==	`green) // the raw pixel is green during green interpplation
+        begin
+        greenWrite <= regFile[0][2][2];
+		  wrEnGreen <= 1'b1;
+		  wrEnRed <= 1'b0;
+		  wrEnBlue <= 1'b0;
+		  end 
+	 else
+	    if (currentBayer ==	`red) // the raw pixel is green during green interpplation
+           begin
+           greenWrite <= greenTemp;
+		     redWrite <= regFile[0][2][2];
+		     wrEnGreen <= 1'b1;
+		     wrEnRed <= 1'b1;
+		     wrEnBlue <= 1'b0;
+		     end
+		 else
+		     begin
+           greenWrite <= greenTemp;
+		     blueWrite <= regFile[0][2][2];
+		     wrEnGreen <= 1'b1;
+		     wrEnRed <= 1'b0;
+		     wrEnBlue <= 1'b1;
+		     end
 	 end
 else
-    begin
-	 greenWrite = greenTemp;
-	 end
+    if (state == `RBIntrp)   // green interpolation is being performed
+        
+		  if (currentBayer ==	`green) // the raw pixel is green during green interpplation
+				begin
+				redWrite <= RonGTemp;
+				blueWrite <= BonGTemp;
+				wrEnGreen <= 1'b0;
+				wrEnRed <= 1'b1;
+				wrEnBlue <= 1'b1;
+				end 
+		  else
+				if (currentBayer ==	`red) // the raw pixel is green during green interpplation
+					 begin
+					 blueWrite <= RBTemp;
+					 wrEnGreen <= 1'b0;
+					 wrEnRed <= 1'b0;
+					 wrEnBlue <= 1'b1;
+					 end
+			  else
+					begin
+					redWrite <= RBTemp;
+					wrEnGreen <= 1'b0;
+					wrEnRed <= 1'b1;
+					wrEnBlue <= 1'b0;
+					end
+	     
+	 else
+	     begin
+		  wrEnGreen <= 1'b0;
+		  wrEnRed <= 1'b0;
+		  wrEnBlue <= 1'b0;
+		  end
+		  
+		
+
+		  
+		  
+		  
+
+
+
+
 
 
 
