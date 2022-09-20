@@ -66,15 +66,258 @@
       <obj_property name="ObjectShortName">writeEnable[1]</obj_property>
       <obj_property name="label">Red En</obj_property>
    </wvobject>
-   <wvobject fp_name="/CFA_2_tb/uut/writeEnable[0]" type="logic" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">[0]</obj_property>
-      <obj_property name="ObjectShortName">writeEnable[0]</obj_property>
-      <obj_property name="label">green En</obj_property>
-   </wvobject>
    <wvobject fp_name="/CFA_2_tb/writeAddress" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">writeAddress[16:0]</obj_property>
       <obj_property name="ObjectShortName">writeAddress[16:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/mem_red" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">mem_red[0:48,11:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_red[0:48,11:0]</obj_property>
+      <wvobject fp_name="/CFA_2_tb/mem_red[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[0,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[1,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[2,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[3,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[4,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[5,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[6,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[7,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[8,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[9,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[10,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[11,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[12,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[13,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[14,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[15,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[16,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[17,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[18,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[19,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[20,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[21,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[22,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[23,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[24,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[25,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[26,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[27,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[28,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[29,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[30,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[31,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[32]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[32,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[32,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[33]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[33,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[33,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[34]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[34,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[34,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[35]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[35,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[35,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[36]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[36,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[36,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[37]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[37,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[37,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[38]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[38,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[38,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[39]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[39,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[39,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[40]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[40,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[40,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[41]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[41,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[41,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[42]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[42,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[42,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[43]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[43,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[43,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[44]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[44,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[44,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[45]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[45,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[45,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[46]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[46,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[46,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[47]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[47,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[47,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/mem_red[48]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[48,11:0]</obj_property>
+         <obj_property name="ObjectShortName">mem_red[48,11:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
    </wvobject>
 </wave_config>

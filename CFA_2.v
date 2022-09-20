@@ -230,7 +230,7 @@ else
 				
 				end
 	 `greenIntrp : begin
-	               if (frameDone)
+	               if (frameDone & delayReg[2])
 	                   begin
 							 addressStart<=1'b1;
 						    state<=`RBIntrp;
