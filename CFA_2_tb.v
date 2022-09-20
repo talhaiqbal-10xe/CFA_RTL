@@ -113,7 +113,9 @@ module CFA_2_tb
 		outfile0=$fopen("7x7VerilogOutputsNS.txt","w");
 		outfile1=$fopen("7x7InputsAndOutputs.txt","r");
 		$readmemb("7x7_rawBinaryNS.txt", mem);
-		//$readmemb("3_70binaryOutputsNS.txt", mem_ref_out);
+		$readmemb("7x7init_NS.txt", mem_green);
+		$readmemb("7x7init_NS.txt", mem_red);
+		$readmemb("7x7init_NS.txt", mem_blue);
 		clk = 0;
 		rst = 1;
 		start =0;

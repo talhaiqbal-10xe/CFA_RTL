@@ -10,7 +10,7 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="14" />
+   <WVObjectSize size="21" />
    <wvobject fp_name="/CFA_2_tb/uut/clk" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -54,21 +54,53 @@
       <obj_property name="ElementShortName">wrEnBlue</obj_property>
       <obj_property name="ObjectShortName">wrEnBlue</obj_property>
    </wvobject>
-   <wvobject fp_name="/CFA_2_tb/uut/writeEnable[2]" type="logic" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">[2]</obj_property>
-      <obj_property name="ObjectShortName">writeEnable[2]</obj_property>
-      <obj_property name="label">Blue Enable</obj_property>
+   <wvobject fp_name="/CFA_2_tb/writeEnable" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">writeEnable[2:0]</obj_property>
+      <obj_property name="ObjectShortName">writeEnable[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <wvobject fp_name="/CFA_2_tb/writeEnable[2]" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2]</obj_property>
+         <obj_property name="ObjectShortName">writeEnable[2]</obj_property>
+         <obj_property name="label">Blue</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/writeEnable[1]" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1]</obj_property>
+         <obj_property name="ObjectShortName">writeEnable[1]</obj_property>
+         <obj_property name="label">Red</obj_property>
+      </wvobject>
+      <wvobject fp_name="/CFA_2_tb/writeEnable[0]" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[0]</obj_property>
+         <obj_property name="ObjectShortName">writeEnable[0]</obj_property>
+         <obj_property name="label">green</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/CFA_2_tb/uut/writeEnable[1]" type="logic" db_ref_id="1">
-      <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">[1]</obj_property>
-      <obj_property name="ObjectShortName">writeEnable[1]</obj_property>
-      <obj_property name="label">Red En</obj_property>
+   <wvobject fp_name="/CFA_2_tb/uut/delayReg[2]" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">[2]</obj_property>
+      <obj_property name="ObjectShortName">delayReg[2]</obj_property>
    </wvobject>
    <wvobject fp_name="/CFA_2_tb/writeAddress" type="array" db_ref_id="1">
       <obj_property name="ElementShortName">writeAddress[16:0]</obj_property>
       <obj_property name="ObjectShortName">writeAddress[16:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/addressingBayerModule/done" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/addressStart" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">addressStart</obj_property>
+      <obj_property name="ObjectShortName">addressStart</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/counterModule/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/counterModule/address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">address[16:0]</obj_property>
+      <obj_property name="ObjectShortName">address[16:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/CFA_2_tb/mem_red" type="array" db_ref_id="1">
@@ -319,5 +351,17 @@
          <obj_property name="ObjectShortName">mem_red[48,11:0]</obj_property>
          <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/RBTemp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RBTemp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RBTemp[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/BonGTemp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">BonGTemp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">BonGTemp[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CFA_2_tb/uut/RonGTemp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">RonGTemp[11:0]</obj_property>
+      <obj_property name="ObjectShortName">RonGTemp[11:0]</obj_property>
    </wvobject>
 </wave_config>

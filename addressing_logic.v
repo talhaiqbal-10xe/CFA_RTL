@@ -211,12 +211,14 @@ else
               bufferEnable <= 1'b0;	           
 				  row<=0;
 				  col<=0;
-				  tempRow<=0;
-				  tempCol<=0;
+				  tempRow<=offset;
+				  tempCol<=offset;
               if (start)
-                 state<=`left;
-					  done <= 1'b0;
-					  bufferEnable <= 1'b1;
+                  begin
+					   state<=`left;
+					   done <= 1'b0;
+					   bufferEnable <= 1'b1;
+						end
 				  end
              		 
 			 
